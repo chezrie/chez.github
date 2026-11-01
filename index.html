@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chezka | Data Science Portfolio</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📊%3C/text%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f1f4f1;--ink:#15251d;--mute:#4d5f55;--pine:#24523f;--gold:#d9a21b;--card:#fff;--line:#c9d4cd}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1a14;--ink:#e8efe9;--mute:#a3b5aa;--pine:#6fc19b;--gold:#e8b53a;--card:#17251d;--line:#2a3d32}}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{background:var(--bg);color:var(--ink);font:19px/1.55 'Newsreader',Georgia,serif;display:flex;flex-direction:column;height:100dvh;overflow:hidden;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+h1,h2,h3,nav,.btn{font-family:'Bricolage Grotesque',system-ui,sans-serif}
+a{color:var(--pine)}
+a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.weave{flex:none;height:18px;background:repeating-linear-gradient(90deg,var(--pine) 0 28px,var(--gold) 28px 36px,var(--ink) 36px 44px,var(--gold) 44px 52px,var(--pine) 52px 80px)}
+header{flex:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px clamp(20px,5vw,64px);font-weight:500;font-size:16px}
+header b{font-weight:800;letter-spacing:.02em}
+nav{display:flex;gap:22px}
+nav a{text-decoration:none;color:var(--mute);padding:4px 0;border-bottom:2px solid transparent}
+nav a:hover,nav a[aria-current="page"]{color:var(--ink);border-color:var(--gold)}
+main{flex:1;min-height:0;overflow-y:auto;padding:0 clamp(20px,5vw,64px) 24px;display:flex}
+.view{display:none;margin:auto 0;width:100%;max-width:1000px}
+.view.on{display:block}
+.eyebrow{font:500 15px 'Bricolage Grotesque',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--pine);margin:0 0 14px}
+h1{font-size:clamp(64px,15vw,168px);line-height:.88;margin:0 0 24px;font-weight:800;letter-spacing:-.035em}
+.lead{font-size:clamp(20px,2.6vw,27px);max-width:28em;margin:0 0 30px;color:var(--mute)}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:11px 22px;border:2px solid var(--ink);color:var(--ink);text-decoration:none;font-weight:700;font-size:16px;border-radius:2px}
+.btn.fill{background:var(--ink);color:var(--bg)}
+.btn:hover{border-color:var(--gold)}
+h2{font-size:clamp(30px,4.5vw,44px);margin:0 0 20px;letter-spacing:-.01em}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-top:5px solid var(--pine);padding:20px 22px;border-radius:3px;font-size:17px}
+.card h3{margin:0 0 8px;font-size:21px}
+.card p{margin:0 0 8px}
+.tags{margin:10px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:6px;font:500 13px 'Bricolage Grotesque',sans-serif;color:var(--mute)}
+.tags li{border:1px solid var(--line);padding:2px 9px;border-radius:99px}
+dl{display:grid;grid-template-columns:auto 1fr;gap:6px 22px;margin:18px 0 0;font-size:17px}
+dt{font:700 16px 'Bricolage Grotesque',sans-serif}
+dd{margin:0}
+.about p{max-width:36em;margin:0}
+@media(max-width:700px){.two{grid-template-columns:1fr}.view{margin:0}header{flex-wrap:wrap}}
+</style>
+</head>
+<body>
+<div class="weave" aria-hidden="true"></div>
+<header>
+<b>CHEZKA</b>
+<nav aria-label="Main">
+<a href="#home">Home</a><a href="#projects">Projects</a><a href="#about">About</a>
+</nav>
+</header>
+<main>
+<section class="view" id="home">
+<p class="eyebrow">BS Data Science · University of the Cordilleras</p>
+<h1>Chezka</h1>
+<p class="lead">I design experiments, read what the numbers say, and explain the results plainly.</p>
+<div class="btns"><a class="btn fill" href="#projects">View projects</a><a class="btn" href="#about">About me</a></div>
+</section>
+
+<section class="view" id="projects">
+<p class="eyebrow">Selected work</p>
+<h2>Projects</h2>
+<div class="two">
+<article class="card">
+<h3>Saluyot biocomposite tomato coating</h3>
+<p>Senior high research testing a saluyot (<i>Corchorus olitorius</i>) mucilage–gelatin film as an edible postharvest coating. Completely randomized design, analyzed with Welch’s one-way ANOVA (p = 0.168, not significant), and defended orally.</p>
+<ul class="tags"><li>Experimental design</li><li>Welch’s ANOVA</li><li>Research writing</li></ul>
+</article>
+<article class="card">
+<h3>Piggy Bank simulator</h3>
+<p>A Python bank transaction simulator. It handles single transactions with if/elif/else and match-case, then loops until the user exits and rejects invalid menu choices.</p>
+<ul class="tags"><li>Python</li><li>Control flow</li><li>Input validation</li></ul>
+</article>
+</div>
+</section>
+
+<section class="view about" id="about">
+<p class="eyebrow">About</p>
+<h2>Hello, I’m Chezka.</h2>
+<p>I’m a first-year BS Data Science student in Baguio City. I graduated from the STEM track at Baguio City National Science High School in the top 3–5% of about 512 students, and I’m building my foundation in Python, statistics, and SQL.</p>
+<dl>
+<dt>Leadership</dt><dd>Secretary, Filipino Journalism Club · Auditor, Girls’ Scouts · First-Aider Representative</dd>
+<dt>Athletics</dt><dd>Girls’ basketball varsity, junior to senior high; 3rd place at district/division level</dd>
+<dt>Contact</dt><dd><a href="mailto:your-email@example.com">your-email@example.com</a></dd>
+</dl>
+</section>
+</main>
+<div class="weave" aria-hidden="true"></div>
+<script>
+(function(){
+var views=['home','projects','about'];
+function show(){
+var h=(location.hash||'#home').slice(1);
+if(views.indexOf(h)<0)h='home';
+views.forEach(function(v){document.getElementById(v).classList.toggle('on',v===h)});
+document.querySelectorAll('nav a').forEach(function(a){
+if(a.getAttribute('href')==='#'+h)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');
+});
+}
+window.addEventListener('hashchange',show);show();
+})();
+</script>
+</body>
+</html>
