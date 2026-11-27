@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Chezka Marie Vendiola | Data Science Portfolio</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23020a38'/%3E%3Ctext x='50' y='68' font-size='54' font-family='sans-serif' font-weight='800' text-anchor='middle' fill='%2311b5df'%3EC%3C/text%3E%3C/svg%3E">
-<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Tinos:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Unbounded:wght@500;700;800&family=Tinos:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#020a38;--ink:#fff;--mute:#b9c6ee;--cyan:#11b5df;--blue:#0b4fb3;--teal:#0b86a8;--deep:#08415f;--btn:#c6e2ff;--card:rgba(255,255,255,.05);--line:#123a85}
 *{box-sizing:border-box}
@@ -44,11 +44,11 @@ nav a svg{width:.95em;height:.95em;flex:none;fill:none;stroke:currentColor;strok
 .btn svg{width:1.1em;height:1.1em;margin-left:8px;vertical-align:-.18em;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
 .pill svg{width:1.2em;height:1.2em;flex:none;fill:none;stroke:var(--cyan);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;letter-spacing:normal}
 .side{display:flex;flex-direction:column;align-items:center;gap:clamp(18px,4.5vh,50px)}
-.photo{width:min(100%,clamp(180px,54vh,600px));aspect-ratio:1;border-radius:50%;border:8px solid var(--blue);box-shadow:16px 10px 0 var(--teal),28px 18px 0 var(--deep);overflow:hidden;margin:0}
+.photo{width:min(100%,clamp(150px,var(--pw,44vh),620px));aspect-ratio:895/1200;border-radius:28px;border:8px solid var(--blue);box-shadow:16px 10px 0 var(--teal),28px 18px 0 var(--deep);overflow:hidden;margin:0}
 .photo{animation:photoGlow 3s ease-in-out infinite}
 @keyframes photoGlow{0%,100%{border-color:var(--blue);box-shadow:16px 10px 0 var(--teal),28px 18px 0 var(--deep),0 0 14px rgba(17,181,223,.30)}50%{border-color:#1a73e8;box-shadow:16px 10px 0 var(--teal),28px 18px 0 var(--deep),0 0 44px rgba(17,181,223,.80)}}
 @keyframes photoGlowS{0%,100%{border-color:var(--blue);box-shadow:8px 6px 0 var(--teal),14px 10px 0 var(--deep),0 0 10px rgba(17,181,223,.30)}50%{border-color:#1a73e8;box-shadow:8px 6px 0 var(--teal),14px 10px 0 var(--deep),0 0 28px rgba(17,181,223,.80)}}
-.photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 14%}
+.photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
 .btns{display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
 .btn{font:700 clamp(15px,min(1.3vw,2.4vh),22px) Arial,Helvetica,sans-serif;display:inline-block;padding:clamp(9px,1.8vh,14px) 46px;background:var(--btn);color:#000;border:2px solid #0a1f44;border-radius:99px;text-decoration:none;transition:transform .2s ease,background .2s ease}
 .btn:hover{transform:translateY(-3px);background:#fff}
@@ -94,7 +94,7 @@ dd{margin:0}
 .social a:hover{transform:translateY(-3px);color:var(--cyan);border-color:var(--cyan);box-shadow:0 0 14px rgba(17,181,223,.45)}
 .social svg{width:50%;height:50%;fill:currentColor}
 .social svg.st{fill:none;stroke:currentColor;stroke-width:2}
-@media(min-width:821px){main{overflow:hidden}}
+@media(min-width:821px){main{overflow:hidden}main.sc{overflow-y:auto}}
 @media(max-width:820px){.hero{gap:10px;padding-top:6px}.social{margin-top:8px;gap:10px}.social a{width:30px;height:30px}.photo{width:clamp(96px,14.5vh,150px)!important}.photo{width:clamp(104px,17vh,160px)!important}.side{gap:12px}.lead{font-size:clamp(15px,2.3vh,19px)}.pill{padding:8px 12px;font-size:12px;letter-spacing:.06em;gap:4px 8px}.slabel{margin:10px 0 6px}.skills{font-size:11px;gap:6px}.skills li{padding:3px 9px}.fcontact{font-size:13px;gap:6px 18px;margin-top:10px;padding-top:8px}.btn{font-size:14px;padding:8px 22px}h1{margin-bottom:10px}.grid{gap:10px}.card{padding:12px 14px;font-size:14px}.card h3{margin-bottom:6px}h2{margin-bottom:12px}
 header{flex-wrap:wrap;padding:10px 14px}nav{font-size:17px;gap:14px;flex-wrap:wrap}.logo{font-size:18px}
 .hero{grid-template-columns:1fr}.side{order:-1}.photo{width:clamp(130px,24vh,200px);box-shadow:8px 6px 0 var(--teal),14px 10px 0 var(--deep);animation-name:photoGlowS}
@@ -114,7 +114,7 @@ nav a[aria-current="page"]{background:rgba(17,181,223,.16);border-color:var(--cy
 @media(max-width:700px){nav a .nl{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}nav a{padding:7px clamp(8px,2.6vw,12px)!important}nav a svg{width:1.15em;height:1.15em}}
 .ab{max-width:min(2000px,97vw)}
 @media(min-width:821px) and (min-height:700px){.ab{padding-top:12px}}
-.ab h2{margin-bottom:clamp(10px,2vh,20px)}.ab h2 span{color:#fff}.ab h2{margin-top:clamp(8px,1.8vh,18px)}
+.ab h2{margin-bottom:clamp(10px,2vh,20px)}.ab h2 span{color:var(--cyan)}.ab h2{margin-top:clamp(8px,1.8vh,18px)}
 .abg{display:grid;grid-template-columns:1.55fr 1fr 1fr;gap:clamp(10px,1.8vh,18px) clamp(12px,1.4vw,20px)}
 .pc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:clamp(10px,2vh,18px) clamp(14px,1.3vw,22px);font-size:calc(clamp(13px,min(1.2vw,2.3vh),18px)*var(--k,1));line-height:1.42;min-width:0}
 .pc h3{font:500 clamp(10px,min(.85vw,1.6vh),12px) 'Unbounded',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--cyan);margin:0 0 clamp(6px,1.2vh,12px)}
@@ -227,12 +227,212 @@ nav a[aria-current="page"]{background:rgba(17,181,223,.16);border-color:var(--cy
 .bl .ph img.fx{opacity:0;transition:transform .6s,opacity 1.3s ease}
 .bl .ph img.fx.on{opacity:1}
 @media(prefers-reduced-motion:reduce){.bl .ph img.fx{transition:transform .6s}}
+
+/* Personal Information redesign */
+#about .abg.pg{grid-template-columns:1.02fr 1.1fr 1fr;grid-template-rows:auto auto auto}
+@media(min-width:821px){#about .ar-id{grid-area:1/1/3/2}#about .ar-bg{grid-area:1/2}#about .ar-gl{grid-area:2/2}#about .ar-in{grid-area:1/3/3/4}#about .ar-sk{grid-area:2/1/3/4}}
+#about .pc h3{margin-top:clamp(6px,1.2vh,12px)}#about .pc h3:first-child,#about .hole+h3{margin-top:0}
+#about .idc{position:relative;background:linear-gradient(165deg,rgba(17,181,223,.16),rgba(11,79,179,.12) 40%,var(--card) 80%);border-color:rgba(17,181,223,.55);box-shadow:0 0 22px rgba(17,181,223,.12);padding-top:calc(clamp(10px,2vh,18px) + 8px)}
+#about .hole{position:absolute;top:8px;left:50%;width:3.2em;height:.42em;margin-left:-1.6em;border-radius:99px;background:var(--bg);border:1px solid rgba(17,181,223,.55)}
+#about .idh{display:flex;align-items:center;gap:.8em;padding-bottom:.6em;margin-bottom:.5em;border-bottom:1px dashed rgba(17,181,223,.45)}
+#about .idp{position:relative;width:3.5em;height:3.5em;flex:none;border-radius:50%;overflow:hidden;border:2px solid var(--cyan);box-shadow:0 0 14px rgba(17,181,223,.5)}
+#about .idp img{position:absolute;width:340%;max-width:none;left:-120%;top:-3%;height:auto}
+#about .idn strong{display:block;color:#fff;font:700 1em 'Unbounded',sans-serif;line-height:1.2;letter-spacing:-.01em}
+#about .idn small{display:block;color:var(--mute);font-size:.82em;margin-top:.15em}
+#about .vit{display:grid;grid-template-columns:repeat(3,1fr);gap:.4em}
+#about .vt{border:1px solid var(--line);border-radius:10px;padding:.35em .55em;background:rgba(255,255,255,.04);min-width:0}
+#about .vt small,#about .idl dt,#about .fv dt{display:block;font:500 .52em 'Unbounded',sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan);line-height:1.5}
+#about .vt b{display:block;color:#fff;font-weight:700;font-size:1.02em;line-height:1.25;white-space:nowrap}
+#about .vt.blood{position:relative;border-color:#ff5d73;background:rgba(255,93,115,.1);box-shadow:0 0 12px rgba(255,93,115,.28)}
+#about .vt.blood b{font-size:1.5em;line-height:1.05;color:#fff}
+#about .vt.blood .dr{position:absolute;right:.4em;top:.4em}
+#about .vt.blood .dr svg{width:1.1em;height:1.1em;fill:#ff5d73;stroke:none}
+#about .lk{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.4em}
+#about .lk li{display:flex;align-items:center;gap:.45em;border:1px solid var(--line);border-radius:99px;padding:.2em .7em .2em .35em;color:#fff;font:500 .88em Arial,Helvetica,sans-serif;background:rgba(255,255,255,.04)}
+#about .lk li span{color:var(--mute);font-size:.85em}
+#about .lk i,#about .sw i{width:.95em;height:.95em;border-radius:50%;flex:none;border:1.5px solid rgba(255,255,255,.55);display:inline-block}
+#about .idl,#about .fv{display:grid;grid-template-columns:1fr 1fr;gap:.4em .8em;margin:0}
+#about .idl .w2{grid-column:1/-1}
+#about .idl dd,#about .fv dd{margin:0;color:#fff;line-height:1.3;font-size:.92em}
+#about .fv{margin-top:0}#about .fv .w2{grid-column:1/-1}#about .fv .chips{margin-top:.15em}#about .mini.fh{margin-top:clamp(8px,1.4vh,14px);padding-top:.6em;border-top:1px dashed rgba(17,181,223,.35)}
+#about .sw li{display:inline-flex;align-items:center;gap:.4em}
+#about .ar-gl .g2{margin-bottom:0}
+#about .ar-gl .motto{margin-top:clamp(8px,1.4vh,14px)}
+#about .ar-sk{display:flex;flex-wrap:wrap;gap:.4em 2.2em;align-items:center;padding-top:clamp(6px,1.2vh,10px);padding-bottom:clamp(6px,1.2vh,10px)}
+#about .skrow{display:flex;align-items:center;gap:.9em;flex-wrap:wrap}
+#about .ar-sk .slabel{margin:0;white-space:nowrap}
+#about .ar-sk .skills li{padding:calc(3px*var(--k,1)) calc(12px*var(--k,1))}
+@media(max-width:820px){#about .abg.pg{grid-template-columns:1fr}}
+#about .idc h3{margin-top:clamp(8px,1.8vh,18px)}#about .idc .hole+h3{margin-top:clamp(2px,1vh,10px)}
+#about .pc h3,#about .mini.fh{font-weight:700}#about .lk li span{font-weight:700;color:var(--cyan)}
+#about .idl em{font-style:normal;color:var(--mute);font-size:.72em;margin-left:.3em;letter-spacing:.04em}#about .idl .sep{color:var(--cyan);margin:0 .6em}#about .fv .by{display:block;color:var(--mute);font-size:.7em;font-style:normal;margin-top:.1em}
+#about .vt{transition:border-color .2s,background .2s,box-shadow .2s,transform .2s;cursor:default}
+#about .vt:nth-child(1){--c:#ff5d73}#about .vt:nth-child(2){--c:#11b5df}#about .vt:nth-child(3){--c:#f2c14e}#about .vt:nth-child(4){--c:#5fd68a}#about .vt:nth-child(5){--c:#b388ff}#about .vt:nth-child(6){--c:#ff9f5a}
+#about .vt.blood{border-color:var(--line);background:rgba(255,255,255,.04);box-shadow:none}
+#about .vt:hover{border-color:var(--c);background:color-mix(in srgb,var(--c) 14%,transparent);box-shadow:0 0 12px color-mix(in srgb,var(--c) 40%,transparent);transform:translateY(-1px)}
+#about .vt:hover small{color:var(--c)}
+#about .pc.story p:not(.motto):not(.mini){font-size:1.24em;line-height:1.45}
+#about .vt{position:relative}
+#about .vt .ti{position:absolute;right:.45em;top:.4em;display:inline-flex}
+#about .vt .ti svg{width:1.15em;height:1.15em;fill:none;stroke:var(--c);stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+#about .vt.blood .dr svg{fill:var(--c)}
+#about .vt small{color:var(--c)}
+#about .lk{gap:.5em}#about .lk li{font-size:1.12em;padding:.25em .8em .25em .4em}#about .lk li span{font-size:.8em}#about .lk i{width:1.05em;height:1.05em}
+#about .col{display:flex;flex-direction:column;gap:clamp(10px,1.8vh,18px);min-width:0}#about .col>.pc{flex:1 1 auto}
+#about .idc h3{margin-top:clamp(8px,1.8vh,18px)}
+#about dl.idl,#about dl.fv{font-size:1.4em;margin-top:0}#about dl.idl{gap:.3em .8em}#about dl.fv{margin-top:.2em}
+#about .ar-gl .g2 .goal{font-size:1.3em;line-height:1.4}#about .ar-gl .goal b{font-size:.85em}#about .ar-gl .motto{font-size:1.3em;line-height:1.4}#about .ar-gl .motto small{font-size:.7em}
+#about .ar-in .chips li{font-size:1.15em;padding:.25em .85em}#about .ar-in .mini{font-size:.82em}#about .ar-in .chips.sw li{font-size:1em}#about .ar-in .chips.sw li i{width:.9em;height:.9em}
+#about .ar-sk .skills{font-size:calc(clamp(13px,min(1.25vw,2.3vh),19px)*var(--k,1)*1.3)}#about .ar-sk .slabel{font-size:calc(clamp(10px,min(.9vw,1.7vh),13px)*var(--k,1)*1.5)}
+.gallery .set img{cursor:zoom-in;transition:transform .2s ease,box-shadow .2s ease}.gallery .set img:hover,.gallery .set img:focus-visible{transform:scale(1.03);box-shadow:0 0 14px rgba(17,181,223,.55);outline:none}
+#alb{position:fixed;inset:0;z-index:70;display:none;align-items:center;justify-content:center;gap:2vw;background:rgba(2,10,56,.94);backdrop-filter:blur(6px);padding:3vh 3vw}
+#alb.on{display:flex}#alb figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:12px;max-width:82vw}
+#alb img{max-width:82vw;max-height:78vh;width:auto;height:auto;border-radius:12px;border:2px solid var(--cyan);box-shadow:0 0 28px rgba(17,181,223,.4)}
+#alb figcaption{color:var(--mute);font-size:clamp(13px,1.6vh,17px);text-align:center;max-width:70ch}
+#alb button{background:rgba(17,181,223,.14);border:1.5px solid var(--cyan);color:#fff;border-radius:50%;cursor:pointer;font:400 26px/1 Arial,sans-serif;width:46px;height:46px;flex:none}
+#alb button:hover,#alb button:focus-visible{background:rgba(17,181,223,.4);outline:none}
+#alb .x{position:absolute;top:18px;right:22px}
+@media(max-width:820px){#alb{flex-wrap:wrap;gap:12px}#alb figure{order:0;width:100%;max-width:100%}#alb img{max-width:92vw}#alb .nv{order:1}}
+#about .vt small{font-size:.66em}#about .vt b{font-size:1.28em}#about .vt.blood b{font-size:1.7em}#about .vt{padding:.4em .6em}#about .vt .ti svg{width:1.3em;height:1.3em}#about .vt.blood .dr svg{width:1.3em;height:1.3em}
+
+/* Achievements by school level */
+#achievements .lvl{display:flex;flex-wrap:wrap;gap:.6em;margin:0 0 clamp(8px,1.6vh,16px)}
+#achievements .lvl button{display:flex;align-items:center;gap:.6em;background:var(--card);border:1.5px solid var(--line);color:#fff;border-radius:99px;padding:.3em 1.1em .3em .35em;cursor:pointer;font:inherit;font-size:calc(clamp(12px,min(1.1vw,2.1vh),16px)*var(--k,1));transition:border-color .2s,background .2s,box-shadow .2s}
+#achievements .lvl button:hover,#achievements .lvl button:focus-visible{border-color:var(--cyan);outline:none;background:rgba(17,181,223,.12)}
+#achievements .lvl button[aria-selected="true"]{border-color:var(--cyan);background:rgba(17,181,223,.2);box-shadow:0 0 14px rgba(17,181,223,.35)}
+#achievements .lt{display:flex;flex-direction:column;text-align:left;line-height:1.2}#achievements .lt b{font:700 1em Arial,Helvetica,sans-serif}#achievements .lt small{color:var(--mute);font-size:.78em;font-family:Arial,Helvetica,sans-serif}
+.lg{position:relative;display:inline-grid;place-items:center;flex:none;width:2.6em;height:2.6em;border-radius:50%;overflow:hidden;background:rgba(17,181,223,.12);border:1.5px solid rgba(17,181,223,.6)}
+.lg b{font:700 .55em Arial,Helvetica,sans-serif;color:var(--cyan);letter-spacing:.02em}
+.lg img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff;padding:2px;box-sizing:border-box}
+.lg.lgx{width:3.4em;height:3.4em}
+#achievements .lvps{display:grid}#achievements .lvp{grid-area:1/1;visibility:hidden;opacity:0;pointer-events:none;transition:opacity .25s}#achievements .lvp.on{visibility:visible;opacity:1;pointer-events:auto}#achievements .lvp .abg.ag{align-items:stretch}
+#achievements .lvh{display:flex;align-items:center;gap:.8em;margin:0 0 clamp(8px,1.4vh,14px);font-size:calc(clamp(13px,min(1.2vw,2.3vh),18px)*var(--k,1))}
+#achievements .lvh>div>b{display:block;color:#fff;font:700 1.05em 'Unbounded',sans-serif;line-height:1.25}#achievements .lvh>div>span{display:block;color:var(--mute);font-size:.85em;margin-top:.1em}
+@media(min-width:821px){#achievements .lvp .abg.ag{grid-template-columns:repeat(var(--n,3),1fr)}}
+@media(max-width:820px){#achievements .lvl{gap:.4em}#achievements .lvl button{font-size:12px}}
+@media(min-width:821px){.pager .btn{font-size:clamp(13px,min(1.15vw,2.1vh),17px)!important;padding:clamp(6px,1.1vh,10px) clamp(22px,2.6vw,38px)!important;border-width:2px}}
+
+#lt-elem,#lp-elem{--lc:#4d9bff}#lt-jhs,#lp-jhs{--lc:#a77bff}#lt-shs,#lp-shs{--lc:#ff7eb6}#lt-col,#lp-col{--lc:#5fd68a}
+#achievements .lvl{gap:.8em;align-items:center}
+#achievements .lvl button{font-size:clamp(14px,min(1.4vw,2.6vh),20px);padding:.45em 1.3em .45em .45em;border:2px solid var(--lc);background:color-mix(in srgb,var(--lc) 16%,var(--bg));box-shadow:0 3px 0 color-mix(in srgb,var(--lc) 55%,transparent),0 0 12px color-mix(in srgb,var(--lc) 25%,transparent);transform:translateY(0);transition:transform .15s,box-shadow .15s,background .2s}
+#achievements .lvl button:hover,#achievements .lvl button:focus-visible{transform:translateY(-2px);background:color-mix(in srgb,var(--lc) 30%,var(--bg));box-shadow:0 5px 0 color-mix(in srgb,var(--lc) 55%,transparent),0 0 18px color-mix(in srgb,var(--lc) 55%,transparent);border-color:var(--lc)}
+#achievements .lvl button:active{transform:translateY(2px);box-shadow:0 1px 0 color-mix(in srgb,var(--lc) 55%,transparent)}
+#achievements .lvl button[aria-selected="true"]{background:var(--lc);border-color:var(--lc);box-shadow:0 0 20px color-mix(in srgb,var(--lc) 60%,transparent);transform:translateY(2px)}
+#achievements .lvl button[aria-selected="true"] .lt b,#achievements .lvl button[aria-selected="true"] .lt small{color:#06103a}
+#achievements .lvl button .lg{border-color:var(--lc);background:rgba(255,255,255,.1)}#achievements .lvl button .lg b{color:var(--lc)}
+#achievements .lvl button[aria-selected="true"] .lg{border-color:#06103a;background:rgba(255,255,255,.55)}#achievements .lvl button[aria-selected="true"] .lg b{color:#06103a}
+#achievements .lt b{font-size:1.05em}#achievements .lt small{font-size:.8em}
+#achievements .lvl .lvn{color:var(--mute);font:italic .8em Tinos,serif;font-size:clamp(12px,1.5vh,15px)}
+#achievements .lvp .pc{border-color:color-mix(in srgb,var(--lc) 50%,var(--line))}#achievements .lvp .pc h3{color:var(--lc)}#achievements .lvp .pc h3 .hi svg{stroke:var(--lc)}#achievements .lvh .lg{border-color:var(--lc)}#achievements .lvh .lg b{color:var(--lc)}
+.lgs{display:inline-flex;flex:none}.lgs .lg{width:2.2em;height:2.2em;margin-left:-.75em;background:#0a1a5c}.lgs .lg:first-child{margin-left:0}
+#achievements .lvh .sch{display:flex;align-items:center;gap:.8em}#achievements .lvh{gap:2.2em;flex-wrap:wrap}
+#achievements .lvh .sch>div>b{display:block;color:#fff;font:700 1.05em 'Unbounded',sans-serif;line-height:1.25}#achievements .lvh .sch>div>span{display:block;color:var(--mute);font-size:.85em;margin-top:.1em}#achievements .lvh .sch .lg.lgx{width:3.4em;height:3.4em}
+#achievements .lvh .lg.lgx b{font-size:.8em}
+#achievements .lvh{gap:.9em}#achievements .lvh .sch+.sch{margin-left:1.2em}#achievements .lvh .lg.lgx,#achievements .lvh .sch .lg.lgx{width:4.4em;height:4.4em}
+
+#achievements .lvl{justify-content:center;gap:1em 1.2em}
+#achievements .lvl .lvn{display:none}
+@media(min-width:821px){#achievements .lvl button{font-size:clamp(14px,min(1.45vw,2.6vh),21px);padding:.4em 1.4em .4em .4em;animation:lvg 2.8s ease-in-out infinite;box-shadow:0 0 16px 2px color-mix(in srgb,var(--lc) 60%,transparent),0 0 34px color-mix(in srgb,var(--lc) 30%,transparent)}
+#achievements .lvl button:hover,#achievements .lvl button:focus-visible{box-shadow:0 0 26px 5px color-mix(in srgb,var(--lc) 85%,transparent),0 0 60px color-mix(in srgb,var(--lc) 50%,transparent)}
+#achievements .lvl button[aria-selected="true"]{box-shadow:0 0 28px 6px color-mix(in srgb,var(--lc) 85%,transparent),0 0 70px color-mix(in srgb,var(--lc) 55%,transparent)}}
+@keyframes lvg{50%{filter:brightness(1.18) drop-shadow(0 0 8px var(--lc))}}
+@media(prefers-reduced-motion:reduce){#achievements .lvl button{animation:none!important}}
+#about .idl a{color:inherit;text-decoration:none;overflow-wrap:anywhere}#about .idl a:hover{color:var(--cyan);text-decoration:underline}
+@media(min-width:821px){#achievements .lvl button{animation:none;box-shadow:0 0 8px color-mix(in srgb,var(--lc) 35%,transparent)}
+#achievements .lvl button:hover,#achievements .lvl button:focus-visible{box-shadow:0 0 12px 1px color-mix(in srgb,var(--lc) 50%,transparent)}
+#achievements .lvl button[aria-selected="true"]{box-shadow:0 0 14px 1px color-mix(in srgb,var(--lc) 55%,transparent)}}
+#about .pc.story p:not(.motto):not(.mini){font-size:1.36em}
+#about dl.idl{font-size:1.55em}
+@media(min-width:821px){#achievements .lvl button{animation:lvg2 3.2s ease-in-out infinite;box-shadow:0 0 10px 1px color-mix(in srgb,var(--lc) 45%,transparent),0 0 20px color-mix(in srgb,var(--lc) 18%,transparent)}
+#achievements .lvl button:hover,#achievements .lvl button:focus-visible{box-shadow:0 0 16px 2px color-mix(in srgb,var(--lc) 65%,transparent),0 0 32px color-mix(in srgb,var(--lc) 28%,transparent)}
+#achievements .lvl button[aria-selected="true"]{box-shadow:0 0 18px 3px color-mix(in srgb,var(--lc) 70%,transparent),0 0 38px color-mix(in srgb,var(--lc) 30%,transparent)}}
+@keyframes lvg2{50%{filter:brightness(1.08) drop-shadow(0 0 3px var(--lc))}}
+
+#about .abg.pg{grid-template-columns:1fr 1.05fr 1.3fr 1fr}
+@media(min-width:821px){#about .ar-id,#about .ar-bg,#about .ar-gl,#about .ar-in,#about .ar-idn{grid-area:auto}#about .ar-sk{grid-area:2/1/3/5}#about .abg.pg{grid-template-rows:1fr auto}}
+#achievements .gallery{}
+@media(min-width:821px){#achievements .gallery{height:clamp(80px,15vh,170px)}}
+#about .abg.pg{grid-template-columns:.95fr 1fr 1.65fr .95fr}
+@media(min-width:821px){#about .idl{grid-template-columns:repeat(3,1fr);grid-auto-flow:row dense}#about .idl .w2{grid-column:span 2}}
+#about .abg.pg{grid-template-columns:.95fr 1.2fr 1.45fr .95fr}
+
+#about .ar-id{--cc:#4d9bff}#about .ar-bg{--cc:#a77bff}#about .ar-gl{--cc:#ffb454}#about .ar-idn{--cc:#5fd68a}#about .ar-in{--cc:#ff7eb6}#about .ar-sk{--cc:#11b5df}
+#about .pg>.col>.pc,#about .ar-sk{border-color:color-mix(in srgb,var(--cc) 70%,transparent);box-shadow:inset 0 2px 0 var(--cc),0 0 0 1px color-mix(in srgb,var(--cc) 18%,transparent)}
+#about .pg>.col>.pc>h3,#about .ar-sk .slabel,#about .pg>.col>.pc .idl dt,#about .pg>.col>.pc .fv dt,#about .pg>.col>.pc .mini{color:var(--cc)}
+#about .ar-in .fh{color:var(--cc);border-color:color-mix(in srgb,var(--cc) 45%,transparent)}
+#about .ar-in .chips:not(.sw) li{border-color:color-mix(in srgb,var(--cc) 45%,transparent)}
+#about .ar-sk .skills li{border-color:color-mix(in srgb,var(--cc) 60%,transparent)}
+#cfx{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:60}#cfx i{position:absolute;top:0;left:0;display:block;will-change:transform,opacity}
+
+@media(min-width:821px){:root{--pw:50vh}}@media(min-width:821px) and (min-height:760px){:root{--pw:54vh}}@media(min-width:821px) and (min-height:950px){:root{--pw:63vh}}
+
+#family{--pk:#ff7eb6;--bl:#4d9bff;--gn:#5fd68a;--am:#ffb454}
+#family .bento{display:grid;gap:clamp(8px,1.4vh,14px);grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:1fr 1fr;margin-top:clamp(8px,1.6vh,16px);height:calc(100% - clamp(112px,16vh,146px));min-height:300px}
+#family .t{position:relative;display:block;margin:0;border-radius:22px;overflow:hidden;border:3px solid var(--c);background:#0b1750;cursor:pointer;transition:transform .35s,box-shadow .35s;outline:none;min-height:0}
+#family .t.mom{--c:var(--pk);grid-row:1/3}#family .t.dad{--c:var(--bl)}#family .t.sib{--c:var(--gn)}#family .t.fr{--c:var(--am);grid-column:2/4}
+#family .t:hover,#family .t:focus-visible{transform:scale(1.015);box-shadow:0 0 34px color-mix(in srgb,var(--c) 60%,transparent);z-index:2}
+#family .t .ph{position:absolute;inset:0}
+#family .t .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.04);transition:opacity 1.4s ease,transform 6s ease}
+#family .t .ph img.on{opacity:1;transform:scale(1)}
+#family .t::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(2,10,56,.9),transparent 50%);pointer-events:none}
+#family .t figcaption{position:absolute;z-index:2;left:18px;right:70px;bottom:14px;text-align:left;font-size:clamp(14px,2.3vh,21px);transform:translateY(34%);transition:transform .35s}
+#family .t figcaption b{display:block;font:800 1em Inter,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--c)}
+#family .t figcaption .nm{display:block;font:700 .75em Arial,sans-serif;color:#fff;opacity:0;transition:opacity .3s}
+#family .t figcaption span{display:block;font:italic 400 1em Tinos,serif;color:#fff;opacity:0;transition:opacity .3s}
+#family .t:hover figcaption,#family .t:focus-visible figcaption{transform:none}
+#family .t:hover figcaption span,#family .t:focus-visible figcaption span,#family .t:hover figcaption .nm,#family .t:focus-visible figcaption .nm{opacity:1}
+#family .t .num{position:absolute;z-index:2;top:10px;right:16px;font:800 clamp(28px,6vh,60px) Inter,Arial,sans-serif;color:var(--c);opacity:.85;text-shadow:0 2px 12px rgba(0,0,0,.5)}
+#family .t .vw{position:absolute;z-index:3;left:50%;top:44%;transform:translate(-50%,-50%);display:inline-flex;align-items:center;gap:6px;background:var(--c);color:#020a38;font:700 clamp(12px,1.9vh,16px) Arial,sans-serif;padding:8px 14px;border-radius:99px;opacity:0;transition:opacity .25s;white-space:nowrap;pointer-events:none}
+#family .t .vw svg{width:1.3em;height:1.3em;fill:none;stroke:#020a38;stroke-width:2;stroke-linecap:round}
+#family .t:hover .vw,#family .t:focus-visible .vw{opacity:1}
+@media(max-width:820px){#family .bento{display:flex;flex-direction:column;height:auto}#family .t{aspect-ratio:4/3}#family .t figcaption{transform:none}#family .t figcaption span,#family .t figcaption .nm{opacity:1}#family .t .vw{display:none}}
+@media(prefers-reduced-motion:reduce){#family .t .ph img{transition:opacity .01s}}
+
+#family .qi{position:fixed;inset:0;z-index:70;background:radial-gradient(ellipse at 50% 45%,#0a1a66 0%,#020a38 70%);display:none;align-items:center;justify-content:center;text-align:center;transition:opacity .9s ease}
+#family.intro .qi{display:flex}#family.intro.out .qi{opacity:0;pointer-events:none}
+#family .qt{font-family:'Great Vibes','Snell Roundhand','Brush Script MT',cursive;font-size:min(7.4vw,12vh,104px);line-height:1.25;color:#fff;text-shadow:0 0 24px rgba(17,181,223,.45);padding:0 4vw}
+#family .ql{display:block;position:relative;width:max-content;max-width:100%;margin:0 auto}
+#family .qw{display:inline-block;white-space:nowrap;padding:0 .14em;margin:0 -.14em;clip-path:inset(-25% 100% -45% -12%)}
+#family .qk{position:absolute;left:0;bottom:.1em;width:.85em;height:.85em;transform:translate(-14%,14%);opacity:0;filter:drop-shadow(0 4px 8px rgba(0,0,0,.5))}
+#family.intro .l1 .qw{animation:qwr 2s cubic-bezier(.45,.1,.55,.9) .4s forwards}
+#family.intro .l2 .qw{animation:qwr 1.2s cubic-bezier(.45,.1,.55,.9) 2.6s forwards}
+#family.intro .l1 .qk{animation:qpn 2s cubic-bezier(.45,.1,.55,.9) .4s forwards,qwob .4s ease-in-out .4s 5}
+#family.intro .l2 .qk{animation:qpn 1.2s cubic-bezier(.45,.1,.55,.9) 2.6s forwards,qwob .4s ease-in-out 2.6s 3}
+@keyframes qwr{to{clip-path:inset(-25% -14% -45% -12%)}}
+@keyframes qpn{0%{left:0;opacity:1}92%{opacity:1}100%{left:100%;opacity:0}}
+@keyframes qwob{50%{bottom:.2em}}
+#family .qs{position:absolute;right:22px;bottom:20px;font:600 14px Arial,sans-serif;color:#fff;background:transparent;border:1.5px solid rgba(255,255,255,.4);border-radius:99px;padding:7px 18px;cursor:pointer;opacity:.7}
+#family .qs:hover{opacity:1;border-color:var(--cyan)}
+#family.intro>h2,#family.intro .bento{opacity:0;visibility:hidden}
+@keyframes tin{from{opacity:0;transform:translateY(34px) scale(.88)}to{opacity:1;transform:none}}
+#family.rev>h2{animation:tin .7s ease both}
+@media(prefers-reduced-motion:reduce){#family.intro .qw{animation-duration:.01s!important;animation-delay:0s!important}#family .qk{display:none}}
+#family .qt .hl{font-weight:400;color:#ffd166;text-shadow:0 0 22px rgba(255,209,102,.65),0 0 4px rgba(255,209,102,.5)}
+#family .qk{width:1.25em;height:1.25em;transform:translate(-8%,7%);bottom:.02em}
+
+#family .t figcaption{transform:none!important}
+#family .t figcaption .nm,#family .t figcaption span{opacity:1!important}
+#family .t::after{background:linear-gradient(to top,rgba(2,10,56,.95) 0%,rgba(2,10,56,.7) 22%,transparent 55%)}
+#family .t figcaption{bottom:16px;font-size:clamp(14px,2.4vh,22px);text-shadow:0 2px 8px rgba(0,0,0,.7)}
+#family .t figcaption span{font-size:1.05em;margin-top:.1em}
+
+#family .bf{position:fixed;left:50%;top:52%;width:0;height:0;z-index:65;pointer-events:none;display:none}
+#family.rev .bf{display:block}
+#family .bf i{display:none!important;position:absolute;left:calc(min(9vw,14vh)*-1);bottom:0;width:min(18vw,28vh);height:min(24vw,38vh);border-radius:50% 50% 50% 50%/78% 78% 22% 22%;background:radial-gradient(ellipse at 50% 85%,#fff3c9 0%,var(--c) 45%,color-mix(in srgb,var(--c) 40%,#020a38) 100%);transform-origin:50% 100%;transform:rotate(var(--a)) scale(0);opacity:0;box-shadow:0 0 30px color-mix(in srgb,var(--c) 60%,transparent);animation:petal 1.9s cubic-bezier(.2,.9,.3,1) var(--d) both}
+#family .bf b{position:absolute;left:calc(min(2.6vw,4vh)*-1);top:calc(min(2.6vw,4vh)*-1);width:min(5.2vw,8vh);height:min(5.2vw,8vh);border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff3c9,#f2c14e 60%,#b9801a);box-shadow:0 0 30px rgba(242,193,78,.8);transform:scale(0);animation:core 2.4s ease-out both}
+@keyframes petal{0%{transform:rotate(calc(var(--a) - 30deg)) scale(0);opacity:0}28%{transform:rotate(var(--a)) scale(1);opacity:.95}58%{transform:rotate(var(--a)) scale(1);opacity:.95}100%{transform:rotate(var(--a)) scale(.55);opacity:0}}
+@keyframes core{0%{transform:scale(0)}25%{transform:scale(1.2)}60%{transform:scale(1);opacity:1}100%{transform:scale(.5);opacity:0}}
+@keyframes bloom{0%{opacity:0;transform:translate(var(--ptx),var(--pty)) rotate(calc(var(--pr) - 55deg)) scale(.04);clip-path:var(--pcl)}9%{opacity:1}40%,54%{opacity:1;transform:translate(var(--ptx),var(--pty)) rotate(var(--pr)) scale(var(--ps));clip-path:var(--pcl)}100%{opacity:1;transform:none;clip-path:inset(0% 0% 0% 0% round 22px)}}
+#family.rev .t{animation:bloom 2.5s cubic-bezier(.45,.05,.25,1) both;will-change:transform,clip-path}
+#family.rev .t.mom{animation-delay:0s}#family.rev .t.dad{animation-delay:.07s}#family.rev .t.sib{animation-delay:.14s}#family.rev .t.fr{animation-delay:.21s}
+#family.rev>h2{animation:tin .8s ease .5s both}
+@media(prefers-reduced-motion:reduce){#family.rev .t,#family .bf{animation:none!important}#family .bf{display:none!important}}
 </style>
 </head>
 <body>
 <header>
 <a class="logo" href="#home" aria-label="Home">CMV</a>
-<nav aria-label="Main"><a href="#home" aria-label="Home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8M5 10v10h5v-6h4v6h5V10"/></svg><span class="nl">Home</span></a><a href="#about" aria-label="Personal Information"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg><span class="nl">Personal Information</span></a><a href="#achievements" aria-label="Achievements"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0zM7 6H4v2a3 3 0 0 0 3 3M17 6h3v2a3 3 0 0 1-3 3"/></svg><span class="nl">Achievements</span></a><a href="#family" aria-label="Family &amp; Friends"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M16 5.2a3 3 0 0 1 0 5.6M18 14.3c2 .7 3 2.7 3 5.7"/></svg><span class="nl">Family &amp; Friends</span></a><a href="#contact" aria-label="Contact"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span class="nl">Contact</span></a></nav>
+<nav aria-label="Main"><a href="#home" aria-label="Home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8M5 10v10h5v-6h4v6h5V10"/></svg><span class="nl">Home</span></a><a href="#about" aria-label="Personal Information"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg><span class="nl">Personal Information</span></a><a href="#achievements" aria-label="Achievements"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0zM7 6H4v2a3 3 0 0 0 3 3M17 6h3v2a3 3 0 0 1-3 3"/></svg><span class="nl">Achievements</span></a><a href="#family" aria-label="Family &amp; Friends"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M16 5.2a3 3 0 0 1 0 5.6M18 14.3c2 .7 3 2.7 3 5.7"/></svg><span class="nl">Family &amp; Friends</span></a></nav>
 </header>
 <main>
 
@@ -250,64 +450,115 @@ nav a[aria-current="page"]{background:rgba(17,181,223,.16);border-color:var(--cy
 <ul class="social" aria-label="Social media"><li><a href="https://www.linkedin.com/in/chezka-marie-vendiola-452422372/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.6h.05c.55-1 1.85-1.95 3.8-1.95 4 0 4.75 2.6 4.75 6V21h-4v-4.9c0-1.2 0-2.7-1.7-2.7-1.7 0-1.95 1.3-1.95 2.6V21h-4z"/></svg></a></li><li><a href="https://www.facebook.com/machezrie.ven01" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3.2h-3.1V7.8c0-.9.3-1.5 1.6-1.5h1.7V3.4c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.5-4 4.1v2.4H7.7V13h2.7v8z"/></svg></a></li><li><a href="https://www.instagram.com/chezrie.ven/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" class="st"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg></a></li><li><a href="https://github.com/chezrie" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.1-1.46-1.1-1.46-.9-.62.07-.6.07-.6 1 .07 1.52 1.02 1.52 1.02.9 1.5 2.35 1.07 2.92.82.1-.65.35-1.07.64-1.32-2.22-.25-4.55-1.1-4.55-4.95 0-1.1.4-2 1.02-2.7-.1-.26-.45-1.28.1-2.67 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.9-1.3 2.75-1.02 2.75-1.02.55 1.4.2 2.4.1 2.67.64.7 1.02 1.6 1.02 2.7 0 3.86-2.34 4.7-4.57 4.95.36.3.68.92.68 1.86v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg></a></li></ul>
 </div>
 <div class="side">
-<figure class="photo"><img src="photo.jpg" alt="Portrait of Chezka Marie Vendiola in a white blouse" width="900" height="1092"></figure>
+<figure class="photo"><img src="photo.jpg" alt="Full-length portrait of Chezka Marie Vendiola in a navy blazer and trousers" width="895" height="1200"></figure>
 <div class="btns"><a class="btn" href="#about">Personal Information &rarr;</a></div>
 </div>
 </div>
 </section>
 
 <section class="view ab" id="about">
-<h2>Personal <span>Information</span></h2>
-<div class="abg">
-<article class="pc story">
+<h2>Personal <span>Info</span>rmation</h2>
+<div class="abg pg">
+<div class="col c1">
+<article class="pc idc ar-id">
+<span class="hole" aria-hidden="true"></span>
+<h3>Vitals</h3>
+<div class="vit">
+<div class="vt blood"><span class="dr" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3s6 6.4 6 10.5A6 6 0 0 1 6 13.5C6 9.4 12 3 12 3z"/></svg></span><small>Blood type</small><b>A</b></div>
+<div class="vt"><span class="ti" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v18M8 7l4-4 4 4M8 17l4 4 4-4"/></svg></span><small>Height</small><b>5’3”</b></div>
+<div class="vt"><span class="ti" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M8 10a5.5 5.5 0 0 1 8 0"/><path d="M12 10l1.8 2"/></svg></span><small>Weight</small><b>49 kg</b></div>
+<div class="vt"><span class="ti" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21v-7h14v7M5 17.5c2 1.5 3.5 1.5 7 0s5 1.5 7 0M12 14V9.5"/><path d="M12 3.5c1.2 1 1.2 2.3 0 3.3-1.2-1-1.2-2.3 0-3.3z"/></svg></span><small>Age</small><b>18 years old</b></div>
+<div class="vt"><span class="ti" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 16c3 0 4-3.5 5-7l3 2c1 1 3 2 6 2.5 2 .4 3 1.2 3 2.5V19H3z"/><path d="M3 16h18"/></svg></span><small>Shoe size</small><b>EU 38</b></div>
+<div class="vt"><span class="ti" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><small>Birthdate</small><b>Jan 10, 2008</b></div>
+</div>
+<h3>Looks</h3>
+<ul class="lk">
+<li><i style="background:#3b2415"></i><span>Hair</span>Dark brown</li>
+<li><i style="background:#6b4423"></i><span>Eyes</span>Brown</li>
+<li><i style="background:#c19a6b"></i><span>Skin</span>Olive</li>
+<li><i style="background:#7a5a3c"></i><span>Style</span>Wavy</li>
+</ul>
+<h3>Daily life</h3>
+<dl class="fv">
+<div><dt>Chronotype</dt><dd>Night owl</dd></div>
+<div><dt>Sleep schedule</dt><dd>10–11 PM</dd></div>
+<div><dt>Commute</dt><dd>Private car</dd></div>
+<div><dt>Learning style</dt><dd>Visual, Auditory, Kinesthetic</dd></div>
+</dl>
+</article>
+</div>
+<div class="col c2">
+<article class="pc story ar-bg">
 <h3>Background</h3>
-<p>A first-year BS Data Science student at the <strong>University of the Cordilleras</strong> in Baguio City, I graduated from the <strong>STEM</strong> track at <strong>Baguio City National Science High School</strong>, where I served as Secretary of the Filipino Journalism Club, Auditor in Girls’ Scouts, and Class First-Aider Representative, and played girls’ basketball varsity from junior to senior high. My senior high research on a saluyot-based edible coating for tomatoes taught me how to turn a question into evidence.</p>
+<p>A first-year BS Data Science student at the <strong>University of the Cordilleras</strong> in Baguio City, I graduated from the <strong>STEM</strong> track at <strong>Baguio City National Science High School</strong>, where I served as Secretary of the Filipino Journalism Club, Auditor in Girls’ Scouts, and Class First-Aider Representative, and played girls’ basketball varsity from junior to senior high. My senior high research taught me how to turn a question into evidence.</p>
 
 </article>
-<article class="pc">
-<h3>Quick facts</h3>
-<ul class="facts">
-<li><span class="ci" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></span><div><b>Full name</b><span class="v">Chezka Marie Vendiola</span></div></li>
-<li><span class="ci" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><div><b>Age</b><span class="v">18 years old</span></div></li>
-<li><span class="ci" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v18M8 7l4-4 4 4M8 17l4 4 4-4"/></svg></span><div><b>Height and weight</b><span class="v">5’3” · 49 kg</span></div></li>
-<li><span class="ci" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><div><b>Birthplace and hometown</b><span class="v">Baguio City, Philippines</span></div></li>
-<li><span class="ci" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"/><path d="M22 9v6"/></svg></span><div><b>School</b><span class="v">University of the Cordilleras</span></div></li>
-<li><span class="ci" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span><div><b>Program</b><span class="v">Bachelor of Science in Data Science (BSDS)</span></div></li>
-<li><span class="ci" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg></span><div><b>Languages</b><span class="v">Filipino, English</span></div></li>
-</ul>
+<article class="pc ar-gl">
+<h3>Goals</h3>
+<div class="g2">
+<p class="goal"><b>This year</b>Build a strong foundation in Python, statistics, and SQL.</p>
+<p class="goal"><b>Long term</b>Grow into a data scientist who turns data into decisions that help people, and continue on to graduate studies.</p>
+</div>
+<p class="motto">A dream keeps no calendar; it waits for whoever dares to begin.<small>Inspired by The Alchemist, Paulo Coelho</small></p>
 </article>
-<article class="pc">
+</div>
+<div class="col c3">
+<article class="pc ar-idn">
+<h3>Identity</h3>
+<dl class="idl">
+<div><dt>Nickname</dt><dd>Chez</dd></div>
+<div><dt>MBTI</dt><dd>INTJ</dd></div>
+<div><dt>Sex</dt><dd>Female</dd></div>
+<div><dt>Civil status</dt><dd>Single</dd></div>
+<div><dt>Nationality / Ethnicity</dt><dd>Filipino / Ilocano</dd></div>
+<div><dt>Religion</dt><dd>Roman Catholic</dd></div>
+<div><dt>Birth order</dt><dd>Eldest</dd></div>
+<div><dt>Birthplace &amp; Hometown</dt><dd>Baguio City</dd></div>
+<div><dt>Languages</dt><dd>Filipino, English</dd></div>
+<div><dt>Allergic to</dt><dd>Dust</dd></div>
+<div><dt>Student ID</dt><dd>26-0698-065</dd></div>
+<div><dt>Dominant hand</dt><dd>Left</dd></div>
+<div><dt>Zodiac sign</dt><dd>Capricorn</dd></div>
+<div><dt>Shirt / pants size</dt><dd>Medium</dd></div>
+<div class="w2"><dt>Core values</dt><dd>Disciplined, goal-oriented</dd></div>
+<div class="w2"><dt>Work experience</dt><dd>Music Teacher</dd></div>
+<div><dt>Dream job</dt><dd>Data Scientist</dd></div>
+<div><dt>Dream destination</dt><dd>New Zealand</dd></div>
+<div><dt>Pet</dt><dd>Cat</dd></div>
+<div class="w2"><dt>Address</dt><dd>KM.4, Asin Road, Baguio City</dd></div>
+<div><dt>Phone</dt><dd><a href="tel:+639762652150">0976 265 2150</a></dd></div>
+<div><dt>Emergency contact</dt><dd><a href="tel:+639776877208">0977 687 7208</a></dd></div>
+<div class="w2"><dt>Email</dt><dd><a href="mailto:crv8659@students.uc-bcf.edu.ph">crv8659@students.uc-bcf.edu.ph</a></dd></div>
+</dl>
+</article>
+</div>
+<div class="col c4">
+<article class="pc ar-in">
 <h3>Interests</h3>
 <p class="mini">Sports</p>
 <ul class="chips"><li>Basketball</li><li>Badminton</li></ul>
 <p class="mini">Music</p>
 <ul class="chips"><li>Violin</li><li>Piano</li><li>Guitar</li><li>Ukulele</li></ul>
 <p class="mini">For fun</p>
-<ul class="chips"><li>Video games</li><li>Movies</li><li>Traveling</li></ul>
-<p class="book"><span class="ci" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5"/></svg></span><span>Favorite book: <i>The Alchemist</i>, Paulo Coelho</span></p>
+<ul class="chips"><li>Video games</li><li>Movies</li><li>Anime</li><li>Traveling</li><li>Science</li><li>Theories</li></ul>
+<p class="mini fh">Favorites</p>
+<dl class="fv">
+<div class="w2"><dt>Colors</dt><dd><ul class="chips sw"><li><i style="background:#ff7eb6"></i>Pink</li><li><i style="background:#9b5de5"></i>Purple</li><li><i style="background:#e63946"></i>Red</li></ul></dd></div>
+<div class="w2"><dt>Food</dt><dd>Bakareta, Beef penne, Lasagna</dd></div>
+<div><dt>Movie</dt><dd>The Hobbit<small class="by">by J.R.R. Tolkien</small></dd></div>
+<div><dt>Game</dt><dd>Cooking Chaos</dd></div>
+<div><dt>Book</dt><dd><i>The Alchemist</i><small class="by">by Paulo Coelho</small></dd></div>
+<div class="w2"><dt>Music genres</dt><dd>OPM, J-pop, Hip-hop, R&amp;B, Classical</dd></div>
+<div><dt>Band / artist</dt><dd>RADWIMPS</dd></div>
+<div><dt>Season</dt><dd>Amihan</dd></div>
+</dl>
 </article>
-<article class="pc wide">
-<div class="gl">
-<div>
-<h3>Goals</h3>
-<div class="g2">
-<p class="goal"><b>This year</b>Build a strong foundation in Python, statistics, and SQL.</p>
-<p class="goal"><b>Long term</b>Grow into a data scientist who turns data into decisions that help people, and continue on to graduate studies.</p>
 </div>
-<p class="mini mt">Motto</p>
-<p class="motto">A dream keeps no calendar; it waits for whoever dares to begin.<small>Inspired by The Alchemist, Paulo Coelho</small></p>
-</div>
-<div>
-<p class="slabel">Skills</p>
-<ul class="skills hl" aria-label="Skills">
-<li>Statistics</li><li>Analytics</li><li>Problem-solving</li><li>Leadership</li><li>Teamwork</li>
-</ul>
-<p class="slabel l2">Currently learning</p>
-<ul class="skills learn" aria-label="Currently learning">
-<li>Computing Fundamentals</li><li>Python</li><li>SQL</li><li>Data Visualization</li>
-</ul>
-</div>
-</div>
+<article class="pc ar-sk">
+<div class="skrow"><p class="slabel">Skills</p>
+<ul class="skills hl" aria-label="Skills"><li>Statistics</li><li>Analytics</li><li>Problem-solving</li><li>Leadership</li><li>Teamwork</li><li>Writing &amp; language</li><li>Pattern recognition</li></ul></div>
+<div class="skrow"><p class="slabel">Currently learning</p>
+<ul class="skills learn" aria-label="Currently learning"><li>Computing Fundamentals</li><li>Python</li><li>SQL</li><li>Data Visualization</li></ul></div>
 </article>
 </div>
 <div class="pager"><a class="btn" href="#home">&larr; Back to Home</a><a class="btn" href="#achievements">View Achievements &rarr;</a></div>
@@ -332,34 +583,25 @@ nav a[aria-current="page"]{background:rgba(17,181,223,.16);border-color:var(--cy
 </section>
 
 <section class="view ab" id="achievements">
-<h2>Achieve<span>ments</span></h2>
-<div class="abg ag">
-<article class="pc"><h3><span class="hi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5zM6 11.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-4.5"/></svg></span>Academics</h3><ul class="al"><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5zM6 11.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-4.5"/></svg></span><div><b>Valedictorian</b><span>Grade 6 · 95% average, with high honors · 2019 · Calvary Ministries Academy of Baguio (CMAB)</span></div></li><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M9 13.5L7.5 21l4.5-2.5 4.5 2.5L15 13.5"/></svg></span><div><b>Top 3</b><span>Grade 1 · 2014–2015 · CMAB</span></div></li><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M9 13.5L7.5 21l4.5-2.5 4.5 2.5L15 13.5"/></svg></span><div><b>Rank 3 of the entire batch</b><span>Grade 10, STE program · 94% GWA · 2023–2024 · Baguio City National Science High School</span></div></li><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M9 13.5L7.5 21l4.5-2.5 4.5 2.5L15 13.5"/></svg></span><div><b>Top 5% of about 512 students</b><span>Senior high school batch · Baguio City National Science High School</span></div></li></ul></article>
-<article class="pc"><h3><span class="hi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0zM7 6H4v2a3 3 0 0 0 3 3M17 6h3v2a3 3 0 0 1-3 3"/></svg></span>Extracurriculars</h3><ul class="al"><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0zM7 6H4v2a3 3 0 0 0 3 3M17 6h3v2a3 3 0 0 1-3 3"/></svg></span><div><b>Champion, UCCP Darlings</b><span>Elementary · 2014</span></div></li><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0zM7 6H4v2a3 3 0 0 0 3 3M17 6h3v2a3 3 0 0 1-3 3"/></svg></span><div><b>Word Factory Champion</b><span>Grades 4–6 · District Sports Fest</span></div></li><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0zM7 6H4v2a3 3 0 0 0 3 3M17 6h3v2a3 3 0 0 1-3 3"/></svg></span><div><b>Buwan ng Wika Champion</b><span>2019</span></div></li><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0zM7 6H4v2a3 3 0 0 0 3 3M17 6h3v2a3 3 0 0 1-3 3"/></svg></span><div><b>Word Factory Champion</b><span>Grades 11 and 12 · Intramurals</span></div></li><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg></span><div><b>Musar Music Competition</b><span>Recital competition · Champion · 2019</span></div></li><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3v18M5.6 5.6c3 3 3 9.8 0 12.8M18.4 5.6c-3 3-3 9.8 0 12.8"/></svg></span><div><b>3rd place, basketball</b><span>District meet · Senior high school</span></div></li></ul></article>
-<article class="pc"><h3><span class="hi"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M16 5.2a3 3 0 0 1 0 5.6M18 14.3c2 .7 3 2.7 3 5.7"/></svg></span>Leadership and recognition</h3><ul class="al"><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg></span><div><b>Best Club Award</b><span>Journalism</span></div></li><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5h7a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H2zM22 5h-7a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h8z"/></svg></span><div><b>Remarkable Reader and Excellent Writing Skill Award</b><span>CMAB</span></div></li><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9 4h6v3H9zM9 12h6M9 16h6"/></svg></span><div><b>Secretary</b><span>Filipino Journalism Club</span></div></li><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 12h2M14 12h2M8 16h2M14 16h2"/></svg></span><div><b>Auditor</b><span>Girls’ Scouts</span></div></li><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M12 8v8M8 12h8"/></svg></span><div><b>First-Aider Representative</b><span>Class</span></div></li></ul></article>
+<h2><span>Achieve</span>ments</h2>
+<div class="lvl" role="tablist" aria-label="School level"><button type="button" role="tab" id="lt-elem" aria-controls="lp-elem" aria-selected="false" tabindex="-1"><span class="lgs"><span class="lg"><b>UCCP</b><img src="images/logos/uccp.png" alt="" onerror="this.remove()"></span><span class="lg"><b>STV</b><img src="images/logos/stvincent.png" alt="" onerror="this.remove()"></span><span class="lg"><b>CMAB</b><img src="images/logos/cmab.png" alt="" onerror="this.remove()"></span></span><span class="lt"><b>Elementary</b><small>UCCP · St. Vincent · CMAB</small></span></button><button type="button" role="tab" id="lt-jhs" aria-controls="lp-jhs" aria-selected="false" tabindex="-1"><span class="lg"><b>BCNSHS</b><img src="images/logos/bcnshs.png" alt="" onerror="this.remove()"></span><span class="lt"><b>Junior High</b><small>BCNSHS</small></span></button><button type="button" role="tab" id="lt-shs" aria-controls="lp-shs" aria-selected="true" tabindex="0"><span class="lg"><b>BCNSHS</b><img src="images/logos/bcnshs.png" alt="" onerror="this.remove()"></span><span class="lt"><b>Senior High</b><small>BCNSHS</small></span></button><button type="button" role="tab" id="lt-col" aria-controls="lp-col" aria-selected="false" tabindex="-1"><span class="lg"><b>UC</b><img src="images/logos/uc.png" alt="" onerror="this.remove()"></span><span class="lt"><b>College (current)</b><small>UC</small></span></button><span class="lvn">Click a level to switch</span></div>
+<div class="lvps">
+<div class="lvp" id="lp-elem" role="tabpanel" aria-labelledby="lt-elem" aria-hidden="true"><div class="lvh"><div class="sch"><span class="lg lgx"><b>UCCP</b><img src="images/logos/uccp.png" alt="" onerror="this.remove()"></span><div><b>UCCP</b><span>Grade 1</span></div></div><div class="sch"><span class="lg lgx"><b>STV</b><img src="images/logos/stvincent.png" alt="" onerror="this.remove()"></span><div><b>St. Vincent</b><span>Grades 2–3</span></div></div><div class="sch"><span class="lg lgx"><b>CMAB</b><img src="images/logos/cmab.png" alt="" onerror="this.remove()"></span><div><b>Calvary Ministries Academy of Baguio</b><span>Grades 4–6</span></div></div></div><div class="abg ag" style="--n:3"><article class="pc"><h3><span class="hi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5zM6 11.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-4.5"/></svg></span>Academics</h3><ul class="al"><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5zM6 11.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-4.5"/></svg></span><div><b>Valedictorian</b><span>Grade 6 · 95% average, with high honors · 2019</span></div></li><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M9 13.5L7.5 21l4.5-2.5 4.5 2.5L15 13.5"/></svg></span><div><b>Top 3</b><span>Grade 1 · 2014–2015 · UCCP</span></div></li></ul></article><article class="pc"><h3><span class="hi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0zM7 6H4v2a3 3 0 0 0 3 3M17 6h3v2a3 3 0 0 1-3 3"/></svg></span>Extracurriculars</h3><ul class="al"><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0zM7 6H4v2a3 3 0 0 0 3 3M17 6h3v2a3 3 0 0 1-3 3"/></svg></span><div><b>Champion, UCCP Darlings</b><span>UCCP · 2014</span></div></li><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0zM7 6H4v2a3 3 0 0 0 3 3M17 6h3v2a3 3 0 0 1-3 3"/></svg></span><div><b>Word Factory Champion</b><span>Grades 4–6 · CMAB · District Sports Fest</span></div></li><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0zM7 6H4v2a3 3 0 0 0 3 3M17 6h3v2a3 3 0 0 1-3 3"/></svg></span><div><b>Buwan ng Wika Champion</b><span>2019</span></div></li><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg></span><div><b>Musar Music Competition</b><span>Recital competition · Champion · 2019</span></div></li></ul></article><article class="pc"><h3><span class="hi"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M16 5.2a3 3 0 0 1 0 5.6M18 14.3c2 .7 3 2.7 3 5.7"/></svg></span>Leadership and recognition</h3><ul class="al"><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5h7a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H2zM22 5h-7a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h8z"/></svg></span><div><b>Remarkable Reader and Excellent Writing Skill Award</b><span>CMAB</span></div></li></ul></article></div></div>
+<div class="lvp" id="lp-jhs" role="tabpanel" aria-labelledby="lt-jhs" aria-hidden="true"><div class="lvh"><span class="lg lgx"><b>BCNSHS</b><img src="images/logos/bcnshs.png" alt="" onerror="this.remove()"></span><div><b>Baguio City National Science High School</b><span>Grades 7–10 · STE program</span></div></div><div class="abg ag" style="--n:2"><article class="pc"><h3><span class="hi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5zM6 11.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-4.5"/></svg></span>Academics</h3><ul class="al"><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M9 13.5L7.5 21l4.5-2.5 4.5 2.5L15 13.5"/></svg></span><div><b>Rank 3 of the entire batch</b><span>Grade 10 · 94% GWA · 2023–2024</span></div></li><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M9 13.5L7.5 21l4.5-2.5 4.5 2.5L15 13.5"/></svg></span><div><b>Consistent with Honors</b><span>Grades 7–10</span></div></li></ul></article><article class="pc"><h3><span class="hi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0zM7 6H4v2a3 3 0 0 0 3 3M17 6h3v2a3 3 0 0 1-3 3"/></svg></span>Extracurriculars</h3><ul class="al"><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0zM7 6H4v2a3 3 0 0 0 3 3M17 6h3v2a3 3 0 0 1-3 3"/></svg></span><div><b>2nd place, Photojournalism competition</b><span>Grade 9</span></div></li><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3v18M5.6 5.6c3 3 3 9.8 0 12.8M18.4 5.6c-3 3-3 9.8 0 12.8"/></svg></span><div><b>Girls’ basketball varsity</b><span>Started playing varsity in junior high</span></div></li></ul></article></div></div>
+<div class="lvp on" id="lp-shs" role="tabpanel" aria-labelledby="lt-shs" aria-hidden="false"><div class="lvh"><span class="lg lgx"><b>BCNSHS</b><img src="images/logos/bcnshs.png" alt="" onerror="this.remove()"></span><div><b>Baguio City National Science High School</b><span>Grades 11–12 · STEM</span></div></div><div class="abg ag" style="--n:3"><article class="pc"><h3><span class="hi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5zM6 11.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-4.5"/></svg></span>Academics</h3><ul class="al"><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M9 13.5L7.5 21l4.5-2.5 4.5 2.5L15 13.5"/></svg></span><div><b>Top 5% of about 512 students</b><span>Senior high school batch</span></div></li><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M9 13.5L7.5 21l4.5-2.5 4.5 2.5L15 13.5"/></svg></span><div><b>Consistent with Honors</b><span>Grades 11–12</span></div></li><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M9 13.5L7.5 21l4.5-2.5 4.5 2.5L15 13.5"/></svg></span><div><b>With High Honors</b><span>Grade 12</span></div></li></ul></article><article class="pc"><h3><span class="hi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0zM7 6H4v2a3 3 0 0 0 3 3M17 6h3v2a3 3 0 0 1-3 3"/></svg></span>Extracurriculars</h3><ul class="al"><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0zM7 6H4v2a3 3 0 0 0 3 3M17 6h3v2a3 3 0 0 1-3 3"/></svg></span><div><b>Word Factory Champion</b><span>Grades 11 and 12 · Intramurals</span></div></li><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3v18M5.6 5.6c3 3 3 9.8 0 12.8M18.4 5.6c-3 3-3 9.8 0 12.8"/></svg></span><div><b>3rd place, basketball</b><span>Palarong Panlungsod</span></div></li></ul></article><article class="pc"><h3><span class="hi"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M16 5.2a3 3 0 0 1 0 5.6M18 14.3c2 .7 3 2.7 3 5.7"/></svg></span>Leadership and recognition</h3><ul class="al"><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg></span><div><b>Best Club Award</b><span>Journalism</span></div></li><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9 4h6v3H9zM9 12h6M9 16h6"/></svg></span><div><b>Secretary</b><span>Filipino Journalism Club</span></div></li><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 12h2M14 12h2M8 16h2M14 16h2"/></svg></span><div><b>Auditor</b><span>Girls’ Scouts</span></div></li><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M12 8v8M8 12h8"/></svg></span><div><b>First-Aider Representative</b><span>Class</span></div></li></ul></article></div></div>
+<div class="lvp" id="lp-col" role="tabpanel" aria-labelledby="lt-col" aria-hidden="true"><div class="lvh"><span class="lg lgx"><b>UC</b><img src="images/logos/uc.png" alt="" onerror="this.remove()"></span><div><b>University of the Cordilleras</b><span>BS Data Science · 1st year</span></div></div><div class="abg ag" style="--n:2"><article class="pc"><h3><span class="hi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5zM6 11.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-4.5"/></svg></span>Academics</h3><ul class="al"><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5zM6 11.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-4.5"/></svg></span><div><b>Number System &amp; Logic Tools</b><span>Radix Converter, Bitwise Converter, Arithmetic Calculators</span></div></li><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M9 13.5L7.5 21l4.5-2.5 4.5 2.5L15 13.5"/></svg></span><div><b>Python Console Applications</b><span>Automated Payroll System &amp; Digital Piggy Bank</span></div></li></ul></article><article class="pc"><h3><span class="hi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0zM7 6H4v2a3 3 0 0 0 3 3M17 6h3v2a3 3 0 0 1-3 3"/></svg></span>Extracurriculars</h3><ul class="al"><li><span class="ai"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg></span><div><b>Member, UC-CCP Percussion &amp; Orchestra</b><span>Center for Creative Productions</span></div></li></ul></article></div></div>
 </div>
 <div class="gallery" role="group" aria-label="Photo gallery"><div class="track"><div class="set"><img src="images/achievements/imagesachievements/violin.jpg" alt="Chezka playing the violin on a balcony"><img src="images/achievements/imagesachievements/recog.jpg" alt="Chezka holding a certificate at a Baguio City National Science High School recognition"><img src="images/achievements/imagesachievements/jh%20grad.jpg" alt="Chezka with her parents, holding a certificate and wearing a medal"><img src="images/achievements/imagesachievements/journ.jpg" alt="Baguio City National Science High School 9th Commencement Exercises, school year 2025–2026"><img src="images/achievements/imagesachievements/plaques.jpg" alt="Plaques and trophies, including UCCP-BEC Darlings 2014 and the Musar recital competition"><img src="images/achievements/imagesachievements/cmab.jpg" alt="Chezka receiving a medal on stage at Calvary Ministries Academy of Baguio, with a slide listing her awards"><img src="images/achievements/imagesachievements/solo2.jpg" alt="Chezka in her Falcon basketball jersey holding a Palarong Panlungsod bronze medal"><img src="images/achievements/imagesachievements/group2.jpg" alt="The Baguio City National Science High School girls’ basketball team with their medals"><img src="images/achievements/imagesachievements/group.jpg" alt="Team members holding their Palarong Panlungsod bronze medals in a circle"><img src="images/achievements/imagesachievements/g3.jpg" alt="The girls’ basketball team posing on the court at University of Baguio"></div></div></div>
 </section>
 
-<section class="view ab" id="family"><h2>Family <em>&amp;</em> Friends</h2><div class="fanw"><span class="stick"></span><figure class="hg bl" data-fits="mom2,1.45,0.02,-0.08,50,100|mom3,1.50,0.00,-0.12,50,89" data-more="images/family/mom2.jpg,images/family/mom3.jpg" tabindex="0" role="button" style="--a:-63deg;--sc:1.7;--tx:-.25;--ty:.12"><div class="bi"><div class="ph"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="3.4"/><path d="M5 20c.8-4 3.5-6 7-6s6.2 2 7 6"/></svg><img src="images/family/mom.jpg" alt="Me and Mom" onerror="this.style.display='none'"></div><figcaption><b>Mom</b><small class="nm">Maribeth Vendiola</small><span>The first person who gave me warmth</span></figcaption><span class="hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5M11 8v6M8 11h6"/></svg>Click to view</span></div></figure><figure class="hg bl" data-fits="dad2,2.10,-0.20,0.40,50,0" data-more="images/family/dad2.jpg,images/family/dad3.jpg" tabindex="0" role="button" style="--a:-21deg;--sc:1.8;--tx:-.12;--ty:.27"><div class="bi"><div class="ph"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="3.4"/><path d="M5 20c.8-4 3.5-6 7-6s6.2 2 7 6"/></svg><img src="images/family/dad.jpg" alt="Me and Dad" onerror="this.style.display='none'"></div><figcaption><b>Dad</b><small class="nm">Florentino Vendiola</small><span>Our strong, funny, and reliable pride</span></figcaption><span class="hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5M11 8v6M8 11h6"/></svg>Click to view</span></div></figure><figure class="hg bl" data-fits="siblings2,1.20,0.06,-0.06,55,25|siblings3,1.20,0.06,-0.06,41,25" data-more="images/family/siblings2.jpg,images/family/siblings3.jpg" tabindex="0" role="button" style="--a:21deg;--sc:1.15;--tx:.10;--ty:-.07"><div class="bi"><div class="ph"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="3.4"/><path d="M5 20c.8-4 3.5-6 7-6s6.2 2 7 6"/></svg><img style="object-position:55% 25%" src="images/family/siblings.jpg" alt="Me and my siblings" onerror="this.style.display='none'"></div><figcaption><b>Siblings</b><small class="nm">Charles Lyrio Vendiola</small><span>My forever companion and rival</span></figcaption><span class="hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5M11 8v6M8 11h6"/></svg>Click to view</span></div></figure><figure class="hg bl" data-fits="friends2,1.45,0.10,-0.02,62,25" data-more="images/family/friends2.jpg,images/family/friends3.jpg" tabindex="0" role="button" style="--a:63deg;--sc:1.5;--tx:.10;--ty:-.01"><div class="bi"><div class="ph"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="3.4"/><path d="M5 20c.8-4 3.5-6 7-6s6.2 2 7 6"/></svg><img style="object-position:60% 25%" src="images/family/friends.jpg" alt="Me and my friends" onerror="this.style.display='none'"></div><figcaption><b>Friends</b><span>Laughter that follows me</span></figcaption><span class="hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5M11 8v6M8 11h6"/></svg>Click to view</span></div></figure><svg class="rivet" viewBox="0 0 24 24" aria-hidden="true"><defs><radialGradient id="rg" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#f6d27a"/><stop offset="1" stop-color="#c98f1d"/></radialGradient></defs><path d="M12 20.6s-8.1-5-8.1-11A4.6 4.6 0 0 1 12 6.9a4.6 4.6 0 0 1 8.1 2.7c0 6-8.1 11-8.1 11z" fill="none" stroke="#f2c14e" stroke-width="3.6" stroke-linejoin="round"/><path d="M12 20.6s-8.1-5-8.1-11A4.6 4.6 0 0 1 12 6.9a4.6 4.6 0 0 1 8.1 2.7c0 6-8.1 11-8.1 11z" fill="none" stroke="#020a38" stroke-width="2" stroke-linejoin="round"/><path d="M12 20.6s-8.1-5-8.1-11A4.6 4.6 0 0 1 12 6.9a4.6 4.6 0 0 1 8.1 2.7c0 6-8.1 11-8.1 11z" fill="url(#rg)"/></svg></div></section>
+<section class="view ab" id="family"><div class="qi" aria-hidden="true"><div class="qt"><span class="ql l1"><span class="qw">The <b class="hl">people</b> who accompany me</span><svg class="qk" viewBox="0 0 120 120" aria-hidden="true"><defs><linearGradient id="qv1" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#d9cfb8"/><stop offset=".45" stop-color="#fbf7ec"/><stop offset="1" stop-color="#ffffff"/></linearGradient><linearGradient id="qb1" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#7a5a1c"/><stop offset="1" stop-color="#e8c777"/></linearGradient></defs><path d="M24.8,92.6 L31.0,90.1 L35.4,87.8 L39.4,85.5 L43.1,83.2 L46.7,80.9 L50.1,78.7 L53.3,76.4 L56.5,74.1 L59.5,71.9 L62.4,69.6 L65.2,67.3 L67.8,65.0 L70.4,62.7 L72.9,60.3 L75.3,58.0 L77.6,55.6 L79.8,53.2 L81.9,50.7 L83.9,48.3 L85.9,45.8 L87.7,43.3 L89.5,40.8 L91.3,38.2 L92.9,35.6 L94.5,33.0 L96.0,30.4 L97.5,27.7 L98.9,25.0 L100.2,22.3 L101.5,19.5 L102.7,16.7 L103.7,13.8 L104.4,11.0 L104.0,8.0 L104.0,8.0 L101.1,8.3 L98.1,9.5 L95.3,10.9 L92.4,12.4 L89.6,13.9 L86.8,15.6 L84.0,17.3 L81.3,19.1 L78.6,20.9 L76.0,22.8 L73.3,24.7 L70.8,26.7 L68.2,28.8 L65.7,30.9 L63.2,33.1 L60.7,35.3 L58.3,37.7 L56.0,40.1 L53.6,42.5 L51.3,45.1 L49.1,47.7 L46.9,50.4 L44.7,53.2 L42.6,56.1 L40.6,59.0 L38.6,62.1 L36.6,65.3 L34.7,68.5 L32.8,71.9 L31.1,75.4 L29.3,79.0 L27.7,82.9 L26.2,87.1 L24.8,92.6Z" fill="url(#qv1)" stroke="#a89a7c" stroke-width=".6" stroke-linejoin="round"/><path d="M24.8,92.6 L24.8,92.6 M24.8,92.6 L24.8,92.6 M26.6,90.4 L31.0,90.1 M26.6,90.4 L26.2,87.1 M28.4,88.3 L35.4,87.8 M28.4,88.3 L27.7,82.9 M30.2,86.1 L39.4,85.5 M30.2,86.1 L29.3,79.0 M32.0,83.9 L43.1,83.2 M32.0,83.9 L31.1,75.4 M33.9,81.6 L46.7,80.9 M33.9,81.6 L32.8,71.9 M35.8,79.4 L50.1,78.7 M35.8,79.4 L34.7,68.5 M37.8,77.1 L53.3,76.4 M37.8,77.1 L36.6,65.3 M39.7,74.8 L56.5,74.1 M39.7,74.8 L38.6,62.1 M41.8,72.5 L59.5,71.9 M41.8,72.5 L40.6,59.0 M43.8,70.2 L62.4,69.6 M43.8,70.2 L42.6,56.1 M45.9,67.9 L65.2,67.3 M45.9,67.9 L44.7,53.2 M48.1,65.5 L67.8,65.0 M48.1,65.5 L46.9,50.4 M50.2,63.1 L70.4,62.7 M50.2,63.1 L49.1,47.7 M52.4,60.7 L72.9,60.3 M52.4,60.7 L51.3,45.1 M54.7,58.2 L75.3,58.0 M54.7,58.2 L53.6,42.5 M56.9,55.8 L77.6,55.6 M56.9,55.8 L56.0,40.1 M59.3,53.3 L79.8,53.2 M59.3,53.3 L58.3,37.7 M61.6,50.8 L81.9,50.7 M61.6,50.8 L60.7,35.3 M64.0,48.3 L83.9,48.3 M64.0,48.3 L63.2,33.1 M66.4,45.8 L85.9,45.8 M66.4,45.8 L65.7,30.9 M68.8,43.2 L87.7,43.3 M68.8,43.2 L68.2,28.8 M71.3,40.6 L89.5,40.8 M71.3,40.6 L70.8,26.7 M73.9,38.0 L91.3,38.2 M73.9,38.0 L73.3,24.7 M76.4,35.4 L92.9,35.6 M76.4,35.4 L76.0,22.8 M79.0,32.7 L94.5,33.0 M79.0,32.7 L78.6,20.9 M81.7,30.1 L96.0,30.4 M81.7,30.1 L81.3,19.1 M84.3,27.4 L97.5,27.7 M84.3,27.4 L84.0,17.3 M87.0,24.7 L98.9,25.0 M87.0,24.7 L86.8,15.6 M89.8,22.0 L100.2,22.3 M89.8,22.0 L89.6,13.9 M92.5,19.2 L101.5,19.5 M92.5,19.2 L92.4,12.4 M95.4,16.4 L102.7,16.7 M95.4,16.4 L95.3,10.9 M98.2,13.6 L103.7,13.8 M98.2,13.6 L98.1,9.5 M101.1,10.8 L104.4,11.0 M101.1,10.8 L101.1,8.3 " fill="none" stroke="#b7aa8c" stroke-width=".55" stroke-linecap="round"/><path d="M10,112 Q40,70 104,8" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" opacity=".9"/><path d="M10,112 Q40,70 104,8" fill="none" stroke="#9a8a66" stroke-width=".9" stroke-linecap="round"/><path d="M10,112 Q22,92 34,78" fill="none" stroke="url(#qb1)" stroke-width="3.2" stroke-linecap="round"/><path d="M6,118 L11,111 L14,113 Z" fill="#1b1b2b"/></svg></span><span class="ql l2"><span class="qw">in this <b class="hl">journey</b>.</span><svg class="qk" viewBox="0 0 120 120" aria-hidden="true"><defs><linearGradient id="qv2" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#d9cfb8"/><stop offset=".45" stop-color="#fbf7ec"/><stop offset="1" stop-color="#ffffff"/></linearGradient><linearGradient id="qb2" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#7a5a1c"/><stop offset="1" stop-color="#e8c777"/></linearGradient></defs><path d="M24.8,92.6 L31.0,90.1 L35.4,87.8 L39.4,85.5 L43.1,83.2 L46.7,80.9 L50.1,78.7 L53.3,76.4 L56.5,74.1 L59.5,71.9 L62.4,69.6 L65.2,67.3 L67.8,65.0 L70.4,62.7 L72.9,60.3 L75.3,58.0 L77.6,55.6 L79.8,53.2 L81.9,50.7 L83.9,48.3 L85.9,45.8 L87.7,43.3 L89.5,40.8 L91.3,38.2 L92.9,35.6 L94.5,33.0 L96.0,30.4 L97.5,27.7 L98.9,25.0 L100.2,22.3 L101.5,19.5 L102.7,16.7 L103.7,13.8 L104.4,11.0 L104.0,8.0 L104.0,8.0 L101.1,8.3 L98.1,9.5 L95.3,10.9 L92.4,12.4 L89.6,13.9 L86.8,15.6 L84.0,17.3 L81.3,19.1 L78.6,20.9 L76.0,22.8 L73.3,24.7 L70.8,26.7 L68.2,28.8 L65.7,30.9 L63.2,33.1 L60.7,35.3 L58.3,37.7 L56.0,40.1 L53.6,42.5 L51.3,45.1 L49.1,47.7 L46.9,50.4 L44.7,53.2 L42.6,56.1 L40.6,59.0 L38.6,62.1 L36.6,65.3 L34.7,68.5 L32.8,71.9 L31.1,75.4 L29.3,79.0 L27.7,82.9 L26.2,87.1 L24.8,92.6Z" fill="url(#qv2)" stroke="#a89a7c" stroke-width=".6" stroke-linejoin="round"/><path d="M24.8,92.6 L24.8,92.6 M24.8,92.6 L24.8,92.6 M26.6,90.4 L31.0,90.1 M26.6,90.4 L26.2,87.1 M28.4,88.3 L35.4,87.8 M28.4,88.3 L27.7,82.9 M30.2,86.1 L39.4,85.5 M30.2,86.1 L29.3,79.0 M32.0,83.9 L43.1,83.2 M32.0,83.9 L31.1,75.4 M33.9,81.6 L46.7,80.9 M33.9,81.6 L32.8,71.9 M35.8,79.4 L50.1,78.7 M35.8,79.4 L34.7,68.5 M37.8,77.1 L53.3,76.4 M37.8,77.1 L36.6,65.3 M39.7,74.8 L56.5,74.1 M39.7,74.8 L38.6,62.1 M41.8,72.5 L59.5,71.9 M41.8,72.5 L40.6,59.0 M43.8,70.2 L62.4,69.6 M43.8,70.2 L42.6,56.1 M45.9,67.9 L65.2,67.3 M45.9,67.9 L44.7,53.2 M48.1,65.5 L67.8,65.0 M48.1,65.5 L46.9,50.4 M50.2,63.1 L70.4,62.7 M50.2,63.1 L49.1,47.7 M52.4,60.7 L72.9,60.3 M52.4,60.7 L51.3,45.1 M54.7,58.2 L75.3,58.0 M54.7,58.2 L53.6,42.5 M56.9,55.8 L77.6,55.6 M56.9,55.8 L56.0,40.1 M59.3,53.3 L79.8,53.2 M59.3,53.3 L58.3,37.7 M61.6,50.8 L81.9,50.7 M61.6,50.8 L60.7,35.3 M64.0,48.3 L83.9,48.3 M64.0,48.3 L63.2,33.1 M66.4,45.8 L85.9,45.8 M66.4,45.8 L65.7,30.9 M68.8,43.2 L87.7,43.3 M68.8,43.2 L68.2,28.8 M71.3,40.6 L89.5,40.8 M71.3,40.6 L70.8,26.7 M73.9,38.0 L91.3,38.2 M73.9,38.0 L73.3,24.7 M76.4,35.4 L92.9,35.6 M76.4,35.4 L76.0,22.8 M79.0,32.7 L94.5,33.0 M79.0,32.7 L78.6,20.9 M81.7,30.1 L96.0,30.4 M81.7,30.1 L81.3,19.1 M84.3,27.4 L97.5,27.7 M84.3,27.4 L84.0,17.3 M87.0,24.7 L98.9,25.0 M87.0,24.7 L86.8,15.6 M89.8,22.0 L100.2,22.3 M89.8,22.0 L89.6,13.9 M92.5,19.2 L101.5,19.5 M92.5,19.2 L92.4,12.4 M95.4,16.4 L102.7,16.7 M95.4,16.4 L95.3,10.9 M98.2,13.6 L103.7,13.8 M98.2,13.6 L98.1,9.5 M101.1,10.8 L104.4,11.0 M101.1,10.8 L101.1,8.3 " fill="none" stroke="#b7aa8c" stroke-width=".55" stroke-linecap="round"/><path d="M10,112 Q40,70 104,8" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" opacity=".9"/><path d="M10,112 Q40,70 104,8" fill="none" stroke="#9a8a66" stroke-width=".9" stroke-linecap="round"/><path d="M10,112 Q22,92 34,78" fill="none" stroke="url(#qb2)" stroke-width="3.2" stroke-linecap="round"/><path d="M6,118 L11,111 L14,113 Z" fill="#1b1b2b"/></svg></span></div></div><div class="bf" aria-hidden="true"><i style="--a:270deg;--c:#ff7eb6;--d:0.00s"></i><i style="--a:0deg;--c:#4d9bff;--d:0.10s"></i><i style="--a:90deg;--c:#5fd68a;--d:0.20s"></i><i style="--a:180deg;--c:#ffb454;--d:0.30s"></i><b></b></div><h2>Family <em>&amp;</em> Friends</h2><div class="bento"><figure class="hg t mom" data-more="images/family/mom2.jpg,images/family/mom3.jpg" data-k="mom" tabindex="0" role="button" aria-label="Mom: view photos"><div class="ph"><img src="images/family/mom.jpg" alt="Me and Mom" style="object-position:50% 35%" class="on" onerror="this.style.display='none'"></div><span class="num" aria-hidden="true">1</span><figcaption><b>Mom</b><small class="nm">Maribeth Vendiola</small><span>The first person who gave me warmth</span></figcaption><span class="vw"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5M11 8v6M8 11h6"/></svg>View photos</span></figure><figure class="hg t dad" data-more="images/family/dad2.jpg,images/family/dad3.jpg" data-k="dad" tabindex="0" role="button" aria-label="Dad: view photos"><div class="ph"><img src="images/family/dad.jpg" alt="Me and Dad" style="object-position:50% 20%" class="on" onerror="this.style.display='none'"></div><span class="num" aria-hidden="true">2</span><figcaption><b>Dad</b><small class="nm">Florentino Vendiola</small><span>Our strong, funny, and reliable pride</span></figcaption><span class="vw"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5M11 8v6M8 11h6"/></svg>View photos</span></figure><figure class="hg t sib" data-more="images/family/siblings2.jpg,images/family/siblings3.jpg" data-k="siblings" tabindex="0" role="button" aria-label="Sibling: view photos"><div class="ph"><img src="images/family/siblings.jpg" alt="Me and my sibling" style="object-position:55% 25%" class="on" onerror="this.style.display='none'"></div><span class="num" aria-hidden="true">3</span><figcaption><b>Sibling</b><small class="nm">Charles Lyrio Vendiola</small><span>My forever companion and rival</span></figcaption><span class="vw"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5M11 8v6M8 11h6"/></svg>View photos</span></figure><figure class="hg t fr" data-more="images/family/friends2.jpg,images/family/friends3.jpg" data-k="friends" tabindex="0" role="button" aria-label="Friends: view photos"><div class="ph"><img src="images/family/friends.jpg" alt="Me and my friends" style="object-position:62% 25%" class="on" onerror="this.style.display='none'"></div><span class="num" aria-hidden="true">4</span><figcaption><b>Friends</b><span>Where every day feels lighter with laughter</span></figcaption><span class="vw"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5M11 8v6M8 11h6"/></svg>View photos</span></figure></div></section>
 
-<section class="view" id="contact">
-<p class="label">Get in touch</p>
-<h2>Con<span>tact</span></h2>
-<ul class="contactlist">
-<li><span class="ci" role="img" aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><a href="mailto:crv8659@students.uc-bcf.edu.ph">crv8659@students.uc-bcf.edu.ph</a></li>
-<li><span class="ci" role="img" aria-label="Phone"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span><a href="tel:+639762652150">0976 265 2150</a></li>
-<li><span class="ci" role="img" aria-label="Location"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>Baguio City, Philippines</li>
-</ul>
-<ul class="social" aria-label="Social media"><li><a href="https://www.linkedin.com/in/chezka-marie-vendiola-452422372/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.6h.05c.55-1 1.85-1.95 3.8-1.95 4 0 4.75 2.6 4.75 6V21h-4v-4.9c0-1.2 0-2.7-1.7-2.7-1.7 0-1.95 1.3-1.95 2.6V21h-4z"/></svg></a></li><li><a href="https://www.facebook.com/machezrie.ven01" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3.2h-3.1V7.8c0-.9.3-1.5 1.6-1.5h1.7V3.4c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.5-4 4.1v2.4H7.7V13h2.7v8z"/></svg></a></li><li><a href="https://www.instagram.com/chezrie.ven/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" class="st"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg></a></li><li><a href="https://github.com/chezrie" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.1-1.46-1.1-1.46-.9-.62.07-.6.07-.6 1 .07 1.52 1.02 1.52 1.02.9 1.5 2.35 1.07 2.92.82.1-.65.35-1.07.64-1.32-2.22-.25-4.55-1.1-4.55-4.95 0-1.1.4-2 1.02-2.7-.1-.26-.45-1.28.1-2.67 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.9-1.3 2.75-1.02 2.75-1.02.55 1.4.2 2.4.1 2.67.64.7 1.02 1.6 1.02 2.7 0 3.86-2.34 4.7-4.57 4.95.36.3.68.92.68 1.86v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg></a></li></ul>
-<p class="foot">&copy; 2026 Chezka Marie Vendiola</p>
-</section>
 
 </main>
 <footer><span>&copy; 2026 Chezka Marie Vendiola. All rights reserved.</span></footer>
 <script>
 (function(){
-var views=['home','about','projects','achievements','family','contact'];
+var views=['home','about','projects','achievements','family'];
 function show(){
 var h=(location.hash||'#home').slice(1);
 if(views.indexOf(h)<0)h='home';
@@ -407,7 +649,8 @@ if(!ab||!m)return;
 ab.style.setProperty('--k',1);
 if(!ab.classList.contains('on')||window.innerWidth<=820)return;
 var k=1;
-while(m.scrollHeight>m.clientHeight&&k>.5){k=Math.round((k-.03)*100)/100;ab.style.setProperty('--k',k);}
+var fl=.5;m.classList.remove('sc');while(m.scrollHeight>m.clientHeight&&k>fl){k=Math.round((k-.03)*100)/100;ab.style.setProperty('--k',k);}
+if(m.scrollHeight>m.clientHeight+2)m.classList.add('sc');
 if(k===1){while(k<(ab.id==='achievements'?1.6:2)){k=Math.round((k+.03)*100)/100;ab.style.setProperty('--k',k);if(m.scrollHeight>m.clientHeight){k=Math.round((k-.03)*100)/100;ab.style.setProperty('--k',k);break;}}}
 }
 function fit(){fitOne(document.getElementById('about'));fitOne(document.getElementById('achievements'));}
@@ -423,6 +666,31 @@ var t=document.querySelector('.gallery .track');if(!t)return;
 var set=t.firstElementChild,c=set.cloneNode(true);c.setAttribute('aria-hidden','true');t.appendChild(c);
 var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
 if(rm){t.style.animation='none';t.parentNode.style.overflowX='auto';}
+})();
+</script>
+<script>
+(function(){
+var tl=document.querySelector('#achievements .lvl');if(!tl)return;
+var tabs=[].slice.call(tl.querySelectorAll('[role=tab]'));
+function sel(t){tabs.forEach(function(b){var on=b===t;b.setAttribute('aria-selected',on);b.tabIndex=on?0:-1;var p=document.getElementById(b.getAttribute('aria-controls'));p.setAttribute('aria-hidden',!on);p.classList.toggle('on',on);});setTimeout(function(){window.dispatchEvent(new Event('resize'))},0);}
+sel(document.getElementById('lt-col')||tabs[tabs.length-1]);
+tabs.forEach(function(b,i){b.addEventListener('click',function(){sel(b);});b.addEventListener('keydown',function(e){var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(!d)return;e.preventDefault();var t=tabs[(i+d+tabs.length)%tabs.length];sel(t);t.focus();});});
+})();
+</script>
+<div id="alb" role="dialog" aria-modal="true" aria-label="Achievement photo"><button class="x" aria-label="Close">&times;</button><button class="nv" data-d="-1" aria-label="Previous photo">&lsaquo;</button><figure><img alt=""><figcaption></figcaption></figure><button class="nv" data-d="1" aria-label="Next photo">&rsaquo;</button></div>
+<script>
+(function(){
+var g=document.querySelector('.gallery .track'),a=document.getElementById('alb');if(!g||!a)return;
+var set=g.firstElementChild,imgs=[].slice.call(set.querySelectorAll('img')),n=imgs.length,cur=0,last=null;
+imgs.forEach(function(i){i.tabIndex=0;i.setAttribute('role','button');});
+var im=a.querySelector('img'),cap=a.querySelector('figcaption');
+function show(k){cur=(k+n)%n;var s=imgs[cur];im.src=s.src;im.alt=s.alt;cap.textContent=s.alt;}
+function open(k){last=document.activeElement;show(k);a.classList.add('on');a.querySelector('.x').focus();}
+function close(){a.classList.remove('on');if(last&&last.focus)try{last.focus({preventScroll:true})}catch(e){}}
+g.addEventListener('click',function(e){var t=e.target;if(t.tagName!=='IMG')return;var all=[].slice.call(t.parentNode.querySelectorAll('img'));open(all.indexOf(t));});
+g.addEventListener('keydown',function(e){if((e.key==='Enter'||e.key===' ')&&e.target.tagName==='IMG'){e.preventDefault();e.target.click();}});
+a.addEventListener('click',function(e){var b=e.target.closest('button');if(b&&b.classList.contains('nv')){show(cur+(+b.dataset.d));return;}if(b||e.target===a)close();});
+document.addEventListener('keydown',function(e){if(!a.classList.contains('on'))return;if(e.key==='Escape')close();else if(e.key==='ArrowLeft')show(cur-1);else if(e.key==='ArrowRight')show(cur+1);});
 })();
 </script>
 <div id="lb" role="dialog" aria-modal="true" aria-label="Photo"><button class="x" aria-label="Close">&times;</button><figure class="lbf"><div class="lbi"></div><figcaption><b></b><small class="nm"></small><span></span></figcaption><div class="dots"></div></figure></div>
@@ -490,6 +758,82 @@ im.onload=function(){ph.appendChild(im);slots[i+1]=im;sl=slots.filter(Boolean);i
 im.src=famSrc('images/family/'+p[0]+'.jpg');});
 function start(){setTimeout(function(){setInterval(function(){if(sl.length<2)return;var c=sl.indexOf(sl.filter(function(e){return e.classList.contains('on')})[0]);sl[c].classList.remove('on');sl[(c+1)%sl.length].classList.add('on');},4600);},k*1150);}
 });
+})();
+</script>
+<script>
+(function(){
+var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+var cols=['#4d9bff','#a77bff','#ff7eb6','#5fd68a','#11b5df','#ffd166','#ffffff'];
+var box=document.createElement('div');box.id='cfx';box.setAttribute('aria-hidden','true');document.body.appendChild(box);
+function burst(x,y,n,spread,power,cs){
+if(rm||!box.animate)return;
+for(var i=0;i<n;i++){
+var p=document.createElement('i'),w=6+Math.random()*7,h=w*(Math.random()<.5?1:2.2);
+p.style.cssText='width:'+w+'px;height:'+h+'px;background:'+(cs||cols)[Math.floor(Math.random()*(cs||cols).length)]+';border-radius:'+(Math.random()<.35?'50%':'2px');
+box.appendChild(p);
+var a=-Math.PI/2+(Math.random()-.5)*spread,v=power*(.45+Math.random()*.75),dx=Math.cos(a)*v,dy=Math.sin(a)*v,fall=260+Math.random()*320,r=(Math.random()-.5)*900,t=1300+Math.random()*1100;
+var an=p.animate([
+{transform:'translate('+x+'px,'+y+'px) rotate(0deg)',opacity:1},
+{transform:'translate('+(x+dx*.6)+'px,'+(y+dy*.6)+'px) rotate('+r*.5+'deg)',opacity:1,offset:.35},
+{transform:'translate('+(x+dx)+'px,'+(y+dy+fall)+'px) rotate('+r+'deg)',opacity:0}
+],{duration:t,easing:'cubic-bezier(.2,.7,.4,1)',fill:'forwards'});
+an.onfinish=(function(el){return function(){el.remove()}})(p);
+}
+}
+function page(){
+var w=window.innerWidth,h=window.innerHeight;
+burst(w*.15,h*.85,46,1.1,h*.9);burst(w*.85,h*.85,46,1.1,h*.9);
+setTimeout(function(){burst(w*.5,h*.35,50,6.28,h*.45)},220);
+}
+var was=location.hash==='#achievements';
+window.addEventListener('hashchange',function(){
+var now=location.hash==='#achievements';
+if(now&&!was)setTimeout(page,120);
+was=now;
+});
+})();
+</script>
+<script>
+(function(){
+var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+var pos={mom2:'50% 30%',mom3:'50% 30%',dad2:'50% 15%',dad3:'50% 20%',siblings2:'55% 25%',siblings3:'50% 25%',friends2:'62% 25%',friends3:'55% 25%'};
+var HOLD1=9000,HOLD=4600,ctl=[];
+Array.prototype.forEach.call(document.querySelectorAll('#family .t'),function(t,k){
+var ph=t.querySelector('.ph'),first=ph.querySelector('img'),sl=[first],tm=null,idx=0,run=false;
+function show(n){sl.forEach(function(e,i){e.classList.toggle('on',i===n)});idx=n;}
+function sched(ms){clearTimeout(tm);if(rm)return;tm=setTimeout(function(){
+if(location.hash!=='#family'||document.getElementById('family').classList.contains('intro')){sched(1000);return;}
+if(sl.length>1)show((idx+1)%sl.length);sched(idx===0?HOLD1:HOLD);},ms);}
+(t.getAttribute('data-more')||'').split(',').forEach(function(u){
+var m=/family\/([a-z0-9]+)\.jpg/.exec(u);if(!m)return;
+var im=new Image();im.alt=first.alt;im.style.objectPosition=pos[m[1]]||'50% 30%';
+im.onload=function(){ph.appendChild(im);sl.push(im);im.classList.remove('on');};
+im.src=(typeof famSrc==='function')?famSrc(u.trim()):u.trim();});
+ctl.push(function(){show(0);sched(HOLD1+k*900);});
+});
+window.addEventListener('famshow',function(){ctl.forEach(function(f){f()});});
+if(location.hash==='#family')setTimeout(function(){window.dispatchEvent(new Event('famshow'))},50);
+})();
+</script>
+<script>
+(function(){
+var f=document.getElementById('family');if(!f)return;
+var T=[],rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+function clr(){T.forEach(clearTimeout);T=[];}
+function aim(){var vw=window.innerWidth,vh=window.innerHeight,cx=vw*.5,cy=vh*.52,L=Math.min(.27*vw,.42*vh),dirs=[[-1,0,-90],[0,-1,0],[1,0,90],[0,1,180]];
+Array.prototype.forEach.call(f.querySelectorAll('.t'),function(t,i){var r=t.getBoundingClientRect(),o=dirs[i%4],w=r.width,h=r.height,wide=w>h,long=Math.max(w,h),px=cx+o[0]*L/2,py=cy+o[1]*L/2;
+var rot=o[2]-(wide?90:0);if(rot<-180)rot+=360;
+t.style.setProperty('--ptx',(px-(r.left+w/2)).toFixed(0)+'px');t.style.setProperty('--pty',(py-(r.top+h/2)).toFixed(0)+'px');
+t.style.setProperty('--pr',rot+'deg');t.style.setProperty('--ps',(L/long).toFixed(3));
+t.style.setProperty('--pcl',wide?'inset(16% 0% 16% 0% round 50%)':'inset(0% 27% 0% 27% round 50%)');});}
+function end(){clr();if(!f.classList.contains('intro'))return;f.classList.add('out');
+T.push(setTimeout(function(){f.classList.remove('intro','out');aim();f.classList.add('rev');window.dispatchEvent(new Event('famshow'));T.push(setTimeout(function(){f.classList.remove('rev')},3400));},850));}
+function play(){clr();f.classList.remove('intro','out','rev');void f.offsetWidth;f.classList.add('intro');
+T.push(setTimeout(end,rm?900:4700));}
+function stop(){clr();f.classList.remove('intro','out','rev');}
+var was=location.hash==='#family';
+if(was)play();
+window.addEventListener('hashchange',function(){var now=location.hash==='#family';if(now&&!was)play();if(!now)stop();was=now;});
 })();
 </script>
 </body>
